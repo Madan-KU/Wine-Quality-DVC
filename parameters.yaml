@@ -1,7 +1,7 @@
 base:
   project: winequality-project
   random_state: 50
-  target_col: TARGET
+  target_col: quality
 
 logging:
   level: INFO
@@ -11,6 +11,7 @@ logging:
 data:
   raw: 'data\raw'
   remote: 'data\remote'
+  cleansed: 'data\cleansed'
 
 
 
