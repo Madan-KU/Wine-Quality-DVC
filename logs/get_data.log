@@ -1,0 +1,29 @@
+INFO: 2023-08-21 21:06:19,471: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:06:30,475: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:09:23,877: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:09:36,790: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:11:32,520: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:11:56,598: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:12:26,950: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:13:12,461: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:14:23,698: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:14:35,723: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:14:51,745: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:57:11,932: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:57:46,932: Successfully read winequality-red.csv
+INFO: 2023-08-21 21:58:17,259: Successfully read winequality-red.csv
+INFO: 2023-08-22 12:05:37,568: Successfully read winequality-red.csv
+INFO: 2023-08-22 12:06:09,089: Successfully read winequality-red.csv
+INFO: 2023-08-22 12:07:28,542: Successfully read winequality-red.csv
+INFO: 2023-08-22 12:09:31,693: Successfully read winequality-red.csv
+INFO: 2023-08-22 12:10:53,158: Successfully read winequality-red.csv
+INFO: 2023-08-22 12:11:23,016: Successfully read winequality-red.csv
+INFO: 2023-08-22 12:12:42,741: Successfully read winequality-red.csv
+INFO: 2023-08-22 12:12:42,775: winequality-red.csv loaded to data\raw
+INFO: 2023-08-22 12:13:07,545: Successfully read winequality-red.csv
+INFO: 2023-08-22 12:13:07,569: winequality-red.csv loaded to 'data\raw'
+WARNING: 2023-08-22 12:47:48,971: No CSV file found in data\raw.
+WARNING: 2023-08-22 12:49:33,026: No CSV file found in data\raw.
+WARNING: 2023-08-22 12:51:09,367: No CSV file found in data\raw.
+WARNING: 2023-08-22 12:51:36,700: No CSV file found in data\raw.
+WARNING: 2023-08-22 13:41:27,751: No CSV file found in data\raw.
