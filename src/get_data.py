@@ -1,12 +1,11 @@
-#read params,
-#process data
-##return data 
-
 import os
 import logging
 import argparse
 import pandas as pd
 import yaml
+
+from modules.data_loader import read_data
+from modules.logger_configurator import configure_logger
 
 
 # Read the YAML configuration
@@ -18,34 +17,11 @@ config = read_yaml_config('parameters.yaml')
 # print(f"config.yaml:{config}\n")
 
 
-# Configuring logging using YAML values
-logging.basicConfig(level=config['logging']['level'],
-                    format=config['logging']['format'],
-                    handlers=[logging.FileHandler(config['logging']['log_file']), logging.StreamHandler()])
-
-filename= ''
-
-def read_data_from_directory(directory_path):
-
-    if not os.path.exists(directory_path):
-        logging.warning(f"Directory {directory_path} does not exist.")
-        return None
-
-    for filename in os.listdir(directory_path):
-        if filename.endswith(".csv"):
-            try:
-                df = pd.read_csv(os.path.join(directory_path, filename))
-                logging.info(f"Successfully read {filename}")
-                return df,filename
-            except Exception as e:
-                logging.error(f"Error reading {filename}: {e}")
-    
-    logging.warning(f"No CSV file found in {directory_path}.")
-    return None
-
 def main():
-    df,filename = read_data_from_directory(config['data']['remote'])
-    filename='raw_'+ filename
+    configure_logger()
+    
+    df,filename = read_data(config['data']['remote'])
+    # filename='raw_'+ filename
 
     if df is not None:
         print(df)

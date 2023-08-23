@@ -1,64 +1,12 @@
-INFO: 2023-08-21 21:06:19,471: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:06:30,475: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:09:23,877: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:09:36,790: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:11:32,520: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:11:56,598: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:12:26,950: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:13:12,461: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:14:23,698: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:14:35,723: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:14:51,745: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:57:11,932: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:57:46,932: Successfully read winequality-red.csv
-INFO: 2023-08-21 21:58:17,259: Successfully read winequality-red.csv
-INFO: 2023-08-22 12:05:37,568: Successfully read winequality-red.csv
-INFO: 2023-08-22 12:06:09,089: Successfully read winequality-red.csv
-INFO: 2023-08-22 12:07:28,542: Successfully read winequality-red.csv
-INFO: 2023-08-22 12:09:31,693: Successfully read winequality-red.csv
-INFO: 2023-08-22 12:10:53,158: Successfully read winequality-red.csv
-INFO: 2023-08-22 12:11:23,016: Successfully read winequality-red.csv
-INFO: 2023-08-22 12:12:42,741: Successfully read winequality-red.csv
-INFO: 2023-08-22 12:12:42,775: winequality-red.csv loaded to data\raw
-INFO: 2023-08-22 12:13:07,545: Successfully read winequality-red.csv
-INFO: 2023-08-22 12:13:07,569: winequality-red.csv loaded to 'data\raw'
-WARNING: 2023-08-22 12:47:48,971: No CSV file found in data\raw.
-WARNING: 2023-08-22 12:49:33,026: No CSV file found in data\raw.
-WARNING: 2023-08-22 12:51:09,367: No CSV file found in data\raw.
-WARNING: 2023-08-22 12:51:36,700: No CSV file found in data\raw.
-WARNING: 2023-08-22 13:41:27,751: No CSV file found in data\raw.
-WARNING: 2023-08-22 13:43:43,362: No CSV file found in data\raw.
-WARNING: 2023-08-22 13:46:47,589: No CSV file found in data\raw.
-WARNING: 2023-08-22 13:54:59,809: No CSV file found in data\raw.
-INFO: 2023-08-22 13:59:00,529: Successfully read winequality-red.csv
-INFO: 2023-08-22 14:04:48,659: Successfully read winequality-red.csv
-INFO: 2023-08-22 14:07:11,299: Successfully read winequality-red.csv
-INFO: 2023-08-22 14:18:45,037: Successfully read winequality-red.csv
-INFO: 2023-08-22 14:18:45,069: 'winequality-red.csv' loaded to 'data\raw'
-INFO: 2023-08-22 14:18:51,973: Successfully read winequality-red.csv
-INFO: 2023-08-22 15:46:01,760: Successfully read winequality-red.csv
-INFO: 2023-08-22 15:47:03,976: Successfully read winequality-red.csv
-INFO: 2023-08-22 15:47:10,203: Successfully read winequality-red.csv
-INFO: 2023-08-22 15:47:20,783: Successfully read winequality-red.csv
-INFO: 2023-08-22 15:48:03,024: Successfully read winequality-red.csv
-INFO: 2023-08-22 15:54:05,350: Successfully read winequality-red.csv
-INFO: 2023-08-22 15:54:05,362: Cleaning data...
-INFO: 2023-08-22 15:54:05,364: Imputed missing values using SimpleImputer
-INFO: 2023-08-22 16:21:11,701: Successfully read winequality-red.csv
-INFO: 2023-08-22 16:21:11,717: Cleaning data...
-INFO: 2023-08-22 16:21:11,717: Imputed missing values using SimpleImputer
-INFO: 2023-08-22 16:21:11,717: 'winequality-red.csv' loaded to 'data\cleansed'
-INFO: 2023-08-22 16:24:11,835: Successfully read winequality-red.csv
-INFO: 2023-08-22 16:24:11,835: Cleaning data...
-INFO: 2023-08-22 16:24:11,835: Imputed missing values using SimpleImputer
-INFO: 2023-08-22 16:24:11,856: 'winequality-red.csv' loaded to 'data\cleansed'
-INFO: 2023-08-22 16:25:41,686: Successfully read winequality-red.csv
-INFO: 2023-08-22 16:25:41,686: Cleaning data...
-INFO: 2023-08-22 16:25:41,686: Imputed missing values using SimpleImputer
-INFO: 2023-08-22 16:25:41,686: 'cleaned_winequality-red.csv' loaded to 'data\cleansed'
-INFO: 2023-08-22 16:44:21,048: Successfully read winequality-red.csv
-INFO: 2023-08-22 16:44:21,070: 'raw_winequality-red.csv' loaded to 'data\raw'
-INFO: 2023-08-22 16:44:45,247: Successfully read raw_winequality-red.csv
-INFO: 2023-08-22 16:44:45,248: Cleaning data...
-INFO: 2023-08-22 16:44:45,250: Imputed missing values using SimpleImputer
-INFO: 2023-08-22 16:44:45,259: 'cleaned_raw_winequality-red.csv' loaded to 'data\cleansed'
+INFO: 2023-08-23 00:56:59,656: Successfully read raw_winequality-red.csv
+INFO: 2023-08-23 00:56:59,656: Cleaning data...
+INFO: 2023-08-23 00:56:59,656: Imputed missing values using SimpleImputer
+INFO: 2023-08-23 00:56:59,656: 'raw_winequality-red.csv' loaded to 'data\cleansed'
+INFO: 2023-08-23 00:59:01,325: Successfully read raw_winequality-red.csv
+INFO: 2023-08-23 00:59:01,325: Cleaning data...
+INFO: 2023-08-23 00:59:01,325: Imputed missing values using SimpleImputer
+INFO: 2023-08-23 00:59:01,343: 'raw_winequality-red.csv' loaded to 'data\cleansed'
+INFO: 2023-08-23 01:05:58,652: Successfully read raw_winequality-red.csv
+INFO: 2023-08-23 01:05:58,652: Cleaning data...
+INFO: 2023-08-23 01:05:58,658: Imputed missing values using SimpleImputer
+INFO: 2023-08-23 01:05:58,671: 'raw_winequality-red.csv' loaded to 'data\cleansed'

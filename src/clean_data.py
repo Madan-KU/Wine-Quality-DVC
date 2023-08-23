@@ -1,10 +1,11 @@
 import os
 import logging
-# import argparse
 import pandas as pd
 import yaml
 from sklearn.impute import SimpleImputer
 
+from modules.data_loader import read_data
+from modules.logger_configurator import configure_logger
 
 # Read the YAML configuration
 def read_yaml_config(file_path):
@@ -13,36 +14,6 @@ def read_yaml_config(file_path):
 
 
 config = read_yaml_config('parameters.yaml')
-
-# Configuring logging using YAML values
-logging.basicConfig(level=config['logging']['level'],
-                    format=config['logging']['format'],
-                    handlers=[logging.FileHandler(config['logging']['log_file']),
-                               logging.StreamHandler()])
-
-def read_data():
-    raw_file_path=config['data']['raw']
-
-    if not os.path.exists(raw_file_path):
-        logging.warning(f"Directory {raw_file_path} does not exist.")
-
-        return None
-    
-    for file in os.listdir(raw_file_path):
-
-        if file.endswith(".csv"):
-            try:
-                raw_file_path=os.path.join(raw_file_path,file)
-                df=pd.read_csv(raw_file_path)
-                logging.info(f"Successfully read {file}")
-                return df,file
-            
-            except Exception as e:
-                logging.error(f"Error reading {file}: {e}")
-                continue
-
-    logging.warning(f"No CSV file found in {raw_file_path}.")
-    return None
 
 
 def clean_data(df):
@@ -59,8 +30,10 @@ def clean_data(df):
     return cleaned_df
 
 def main():
-    df,filename=read_data()
-    filename='cleaned_'+ filename
+    configure_logger()
+
+    df,filename=read_data(config['data']['raw'])
+    # filename='cleaned_'+ filename
     output_path = os.path.join(config['data']['cleansed'], filename)
 
     if df is not None:

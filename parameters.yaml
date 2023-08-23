@@ -6,12 +6,13 @@ base:
 logging:
   level: INFO
   format: '%(levelname)s: %(asctime)s: %(message)s'
-  log_file: 'logs/get_data.log'
+  log_file: 'logs/data.log'
 
 data:
   raw: 'data\raw'
   remote: 'data\remote'
   cleansed: 'data\cleansed'
+  transformed: 'data\transformed'
 
 
 

@@ -1,0 +1,23 @@
+INFO: 2023-08-23 01:12:14,891: Successfully read raw_winequality-red.csv
+INFO: 2023-08-23 01:12:14,891: Cleaning data...
+INFO: 2023-08-23 01:12:14,907: Imputed missing values using SimpleImputer
+INFO: 2023-08-23 01:12:14,907: 'raw_winequality-red.csv' loaded to 'data\cleansed'
+INFO: 2023-08-23 01:14:23,736: Successfully read winequality-red.csv
+INFO: 2023-08-23 01:14:23,758: 'winequality-red.csv' loaded to 'data\raw'
+INFO: 2023-08-23 01:17:31,351: Successfully read cleaned_raw_winequality-red.csv
+INFO: 2023-08-23 01:24:15,741: Successfully read winequality-red.csv
+INFO: 2023-08-23 01:24:15,762: 'winequality-red.csv' loaded to 'data\raw'
+INFO: 2023-08-23 01:24:30,207: Successfully read winequality-red.csv
+INFO: 2023-08-23 01:24:30,207: Cleaning data...
+INFO: 2023-08-23 01:24:30,222: Imputed missing values using SimpleImputer
+INFO: 2023-08-23 01:24:30,222: 'winequality-red.csv' loaded to 'data\cleansed'
+INFO: 2023-08-23 01:24:48,765: Successfully read winequality-red.csv
+INFO: 2023-08-23 01:25:09,544: Successfully read winequality-red.csv
+ERROR: 2023-08-23 01:26:17,714: Error reading winequality-red.csv: 'str' object has no attribute 'shape'
+WARNING: 2023-08-23 01:26:17,714: No CSV file found in data\cleansed.
+ERROR: 2023-08-23 01:26:28,713: Error reading winequality-red.csv: 'str' object has no attribute 'shape'
+WARNING: 2023-08-23 01:26:28,713: No CSV file found in data\cleansed.
+INFO: 2023-08-23 01:28:22,910: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-23 01:32:27,546: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-23 01:35:53,548: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-23 01:35:53,580: 'winequality-red.csv' loaded to 'data\transformed'
