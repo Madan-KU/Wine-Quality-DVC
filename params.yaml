@@ -60,7 +60,7 @@ model:
 saved_model_dir: saved_models
 
 reports:
-  params: report\param.json
+  params: report\params.json
   metrics: report\metrics.json
   metrics_history: report\metrics_history.json
 

@@ -235,3 +235,25 @@ INFO: 2023-08-28 14:02:29,571: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
 INFO: 2023-08-28 14:02:29,573: 'Lasso()' saved to 'saved_models\Lasso'
 INFO: 2023-08-28 14:02:29,588: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
 INFO: 2023-08-28 14:02:29,591: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 14:17:02,097: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:17:02,150: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:17:02,156: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 14:17:02,378: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 14:17:02,383: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 14:17:02,387: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 14:17:02,389: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 14:17:02,393: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 14:17:02,395: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 14:17:02,411: DecisionTreeRegressor - RMSE: 0.65 - MAE: 0.41 - R2 Score: 0.58
+INFO: 2023-08-28 14:17:02,414: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 14:18:33,897: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:18:33,951: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:18:33,955: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 14:18:34,180: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 14:18:34,184: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 14:18:34,188: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 14:18:34,190: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 14:18:34,193: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 14:18:34,196: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 14:18:34,212: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.43 - R2 Score: 0.54
+INFO: 2023-08-28 14:18:34,215: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'

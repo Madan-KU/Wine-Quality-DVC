@@ -85,12 +85,12 @@ stages:
       size: 513
     - path: params.yaml
       hash: md5
-      md5: d58efc6112ad41bc73407984984477ac
-      size: 1586
+      md5: fa7d7ad4625411c8dbc6fb06e06cf1f4
+      size: 1587
     - path: src\S04_model_training_and_evaluate.py
       hash: md5
-      md5: cb4f588d6ffcd5ff9fc7e22909f68bd1
-      size: 4428
+      md5: 5dfedbf9280ed4198eb32fdbf9504b3b
+      size: 4847
     params:
       params.yaml:
         model.GradientBoostingRegressor.params.learning_rate: 0.1
@@ -102,10 +102,10 @@ stages:
     outs:
     - path: report\metrics.json
       hash: md5
-      md5: 8e54587684bfb3c1b6f01e327cbb3dce
-      size: 1294
+      md5: 20a604d8fedf28e58f94bb57deb4a9f4
+      size: 923
     - path: saved_models/
       hash: md5
-      md5: 5250ad3ebae1dd6ce469dfa34a3b2ddc.dir
-      size: 357229
+      md5: e92e0f37a358a245bc3c47f53b09ae03.dir
+      size: 356797
       nfiles: 5
