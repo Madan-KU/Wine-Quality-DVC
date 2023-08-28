@@ -36,7 +36,7 @@ model:
     name: GradientBoostingRegression
     class: 'models.gradient_boosting_regression_model.train_gradient_boosting_regression_model'
     params:
-      n_estimators: 100
+      n_estimators: 50
       learning_rate: 0.1
 
   Ridge:

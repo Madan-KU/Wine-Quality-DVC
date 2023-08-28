@@ -85,8 +85,8 @@ stages:
       size: 513
     - path: params.yaml
       hash: md5
-      md5: fa7d7ad4625411c8dbc6fb06e06cf1f4
-      size: 1587
+      md5: f814b1679d658631613e619b0a66e893
+      size: 1586
     - path: src\S04_model_training_and_evaluate.py
       hash: md5
       md5: 5dfedbf9280ed4198eb32fdbf9504b3b
@@ -94,7 +94,7 @@ stages:
     params:
       params.yaml:
         model.GradientBoostingRegressor.params.learning_rate: 0.1
-        model.GradientBoostingRegressor.params.n_estimators: 100
+        model.GradientBoostingRegressor.params.n_estimators: 50
         model.Lasso.params.alpha: 1.0
         model.Ridge.params.alpha: 1.0
         model.SVR.params.C: 1.0
@@ -102,10 +102,10 @@ stages:
     outs:
     - path: report\metrics.json
       hash: md5
-      md5: 20a604d8fedf28e58f94bb57deb4a9f4
-      size: 923
+      md5: d52704718c62c2786bab3a6b8605fa11
+      size: 922
     - path: saved_models/
       hash: md5
-      md5: e92e0f37a358a245bc3c47f53b09ae03.dir
-      size: 356797
+      md5: b16c0a727a5dc31351cec76983a0b19f.dir
+      size: 290800
       nfiles: 5
