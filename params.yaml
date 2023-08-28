@@ -18,6 +18,8 @@ data:
 data_source:
   remote_source: remote\winequality-red.csv
 
+schema:
+  input: schema\input_schema.json
 
 split_data:
   train_path: data\processed\train_wine_quality.csv

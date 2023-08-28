@@ -14,6 +14,7 @@ src/S02_clean_data.py
 src/S03_transform_data.py
 src/S04_model_training_and_evaluate.py
 src/__init__.py
+tests/test_config.py
 wine_quality.egg-info/PKG-INFO
 wine_quality.egg-info/SOURCES.txt
 wine_quality.egg-info/dependency_links.txt

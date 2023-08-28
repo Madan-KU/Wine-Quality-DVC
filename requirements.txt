@@ -3,3 +3,7 @@ pandas
 dvc
 dvc[gdrive]
 sklearn
+pytest
+tox
+
+-e .

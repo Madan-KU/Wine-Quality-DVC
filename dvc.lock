@@ -85,8 +85,8 @@ stages:
       size: 513
     - path: params.yaml
       hash: md5
-      md5: f814b1679d658631613e619b0a66e893
-      size: 1586
+      md5: d3ee18029998e05399ae69fc9ecb5a78
+      size: 1630
     - path: src\S04_model_training_and_evaluate.py
       hash: md5
       md5: 115249821e4597a3f001333803838fb7
@@ -102,14 +102,14 @@ stages:
     outs:
     - path: report\metrics.json
       hash: md5
-      md5: 9e72ec9d35ee9dd831ef910c607c9094
-      size: 920
+      md5: a38ad3b0d9f31624a3ae70923c1e0a0b
+      size: 921
     - path: report\params.json
       hash: md5
       md5: 70765cff5638e1ca0d9409ac78985e6f
       size: 523
     - path: saved_models/
       hash: md5
-      md5: f9b589bf25ca1f19180b6a98c2910f99.dir
-      size: 292240
+      md5: 4f8231667cde29cb9fca472c78bcfecf.dir
+      size: 290944
       nfiles: 5

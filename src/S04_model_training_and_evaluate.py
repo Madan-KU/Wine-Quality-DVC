@@ -1,9 +1,8 @@
 import os
+import json
+import yaml
 import logging
 import pickle
-import yaml
-import json
-import datetime
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import GradientBoostingRegressor
