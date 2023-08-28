@@ -18,3 +18,8 @@
 {"timestamp": "2023-08-28 14:20:40.758948", "model": "Ridge", "metrics": {"rmse": 0.8161645719188603, "mae": 0.6422110168747823, "r2": 0.34080638514953576}, "hyperparameters": {"alpha": 1.0}},
 {"timestamp": "2023-08-28 14:20:40.764957", "model": "Lasso", "metrics": {"rmse": 0.9981016689858636, "mae": 0.8223135554387132, "r2": 0.014158542323784329}, "hyperparameters": {"alpha": 1.0}},
 {"timestamp": "2023-08-28 14:20:40.784089", "model": "DecisionTreeRegressor", "metrics": {"rmse": 0.6711145028427906, "mae": 0.43013888888888874, "r2": 0.5542916584009521}, "hyperparameters": {}},
+{"timestamp": "2023-08-28 14:21:56.999387", "model": "SVR", "metrics": {"rmse": 0.9149542837532878, "mae": 0.694427812860458, "r2": 0.17156907289405643}, "hyperparameters": {"kernel": "rbf", "C": 1.0}},
+{"timestamp": "2023-08-28 14:21:57.126511", "model": "GradientBoostingRegressor", "metrics": {"rmse": 0.5278563925521866, "mae": 0.41005775636411895, "r2": 0.7242667848827768}, "hyperparameters": {"n_estimators": 50, "learning_rate": 0.1}},
+{"timestamp": "2023-08-28 14:21:57.133470", "model": "Ridge", "metrics": {"rmse": 0.8161645719188603, "mae": 0.6422110168747823, "r2": 0.34080638514953576}, "hyperparameters": {"alpha": 1.0}},
+{"timestamp": "2023-08-28 14:21:57.140621", "model": "Lasso", "metrics": {"rmse": 0.9981016689858636, "mae": 0.8223135554387132, "r2": 0.014158542323784329}, "hyperparameters": {"alpha": 1.0}},
+{"timestamp": "2023-08-28 14:21:57.160349", "model": "DecisionTreeRegressor", "metrics": {"rmse": 0.6694041020578316, "mae": 0.43333333333333335, "r2": 0.5565606257539365}, "hyperparameters": {}},

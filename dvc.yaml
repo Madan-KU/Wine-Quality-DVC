@@ -39,6 +39,9 @@ stages:
     metrics:
       - report\metrics.json:
           cache: false
+
+      - report\params.json:
+          cache: false
     params:
       - model.SVR.params.kernel
       - model.SVR.params.C
