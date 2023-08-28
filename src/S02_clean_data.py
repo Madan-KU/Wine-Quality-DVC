@@ -13,7 +13,7 @@ def read_yaml_config(file_path):
         return yaml.safe_load(file)
 
 
-config = read_yaml_config('parameters.yaml')
+config = read_yaml_config('params.yaml')
 
 
 def clean_data(df):

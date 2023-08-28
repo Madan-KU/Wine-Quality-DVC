@@ -1,23 +1,237 @@
-INFO: 2023-08-23 01:12:14,891: Successfully read raw_winequality-red.csv
-INFO: 2023-08-23 01:12:14,891: Cleaning data...
-INFO: 2023-08-23 01:12:14,907: Imputed missing values using SimpleImputer
-INFO: 2023-08-23 01:12:14,907: 'raw_winequality-red.csv' loaded to 'data\cleansed'
-INFO: 2023-08-23 01:14:23,736: Successfully read winequality-red.csv
-INFO: 2023-08-23 01:14:23,758: 'winequality-red.csv' loaded to 'data\raw'
-INFO: 2023-08-23 01:17:31,351: Successfully read cleaned_raw_winequality-red.csv
-INFO: 2023-08-23 01:24:15,741: Successfully read winequality-red.csv
-INFO: 2023-08-23 01:24:15,762: 'winequality-red.csv' loaded to 'data\raw'
-INFO: 2023-08-23 01:24:30,207: Successfully read winequality-red.csv
-INFO: 2023-08-23 01:24:30,207: Cleaning data...
-INFO: 2023-08-23 01:24:30,222: Imputed missing values using SimpleImputer
-INFO: 2023-08-23 01:24:30,222: 'winequality-red.csv' loaded to 'data\cleansed'
-INFO: 2023-08-23 01:24:48,765: Successfully read winequality-red.csv
-INFO: 2023-08-23 01:25:09,544: Successfully read winequality-red.csv
-ERROR: 2023-08-23 01:26:17,714: Error reading winequality-red.csv: 'str' object has no attribute 'shape'
-WARNING: 2023-08-23 01:26:17,714: No CSV file found in data\cleansed.
-ERROR: 2023-08-23 01:26:28,713: Error reading winequality-red.csv: 'str' object has no attribute 'shape'
-WARNING: 2023-08-23 01:26:28,713: No CSV file found in data\cleansed.
-INFO: 2023-08-23 01:28:22,910: Successfully read winequality-red.csv, shape (1599, 12)
-INFO: 2023-08-23 01:32:27,546: Successfully read winequality-red.csv, shape (1599, 12)
-INFO: 2023-08-23 01:35:53,548: Successfully read winequality-red.csv, shape (1599, 12)
-INFO: 2023-08-23 01:35:53,580: 'winequality-red.csv' loaded to 'data\transformed'
+INFO: 2023-08-28 12:32:40,427: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 12:32:40,478: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 12:32:40,481: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 12:32:40,691: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 12:32:40,722: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 12:32:40,731: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 12:32:40,742: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 12:32:40,747: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 12:32:40,749: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 12:32:40,765: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-28 12:32:40,767: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 12:33:04,759: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 12:33:04,812: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 12:33:04,815: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 12:33:05,027: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 12:33:05,037: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 12:33:05,042: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 12:33:05,043: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 12:33:05,047: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 12:33:05,048: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 12:33:05,063: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.45 - R2 Score: 0.54
+INFO: 2023-08-28 12:33:05,065: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 12:36:10,918: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 12:36:10,974: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 12:36:10,977: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 12:36:11,192: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 12:36:11,196: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 12:36:11,200: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 12:36:11,203: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 12:36:11,207: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 12:36:11,208: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 12:36:11,225: DecisionTreeRegressor - RMSE: 0.69 - MAE: 0.44 - R2 Score: 0.53
+INFO: 2023-08-28 12:36:11,226: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:20:45,416: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:20:45,437: 'winequality-red.csv' loaded to 'data\raw'
+INFO: 2023-08-28 13:20:58,974: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:20:58,994: 'winequality-red.csv' loaded to 'data\raw'
+INFO: 2023-08-28 13:20:59,977: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:20:59,978: Cleaning data...
+INFO: 2023-08-28 13:20:59,981: Imputed missing values using SimpleImputer
+INFO: 2023-08-28 13:20:59,990: 'winequality-red.csv' loaded to 'data\cleansed'
+INFO: 2023-08-28 13:21:00,944: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:21:00,964: 'winequality-red.csv' loaded to 'data\transformed'
+INFO: 2023-08-28 13:21:02,011: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:21:02,062: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:21:02,065: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:21:02,281: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 13:21:02,284: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:21:02,287: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 13:21:02,297: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:21:02,302: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 13:21:02,302: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:21:02,320: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.54
+INFO: 2023-08-28 13:21:02,323: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:30:04,832: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:30:04,891: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:32:23,476: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:32:23,529: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:32:23,532: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:32:23,757: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 13:32:23,760: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:32:23,764: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 13:32:23,766: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:32:23,770: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 13:32:23,771: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:32:23,787: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-28 13:32:23,789: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:34:50,031: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:34:50,087: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:34:50,091: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:34:50,317: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 13:34:50,321: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:34:50,325: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 13:34:50,327: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:34:50,332: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 13:34:50,334: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:34:50,350: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.43 - R2 Score: 0.55
+INFO: 2023-08-28 13:34:50,353: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:40:42,499: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:40:42,552: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:40:42,554: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:40:42,777: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 13:40:42,781: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:40:42,784: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 13:40:42,786: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:40:42,789: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 13:40:42,790: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:40:42,807: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-28 13:40:42,809: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:41:20,274: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:41:20,328: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:41:20,331: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:41:20,557: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 13:41:20,560: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:41:20,565: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 13:41:20,566: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:41:20,570: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 13:41:20,571: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:41:20,587: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.56
+INFO: 2023-08-28 13:41:20,589: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:43:04,907: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:43:04,961: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:43:04,965: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:43:05,186: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 13:43:05,189: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:43:05,193: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 13:43:05,194: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:43:05,200: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 13:43:05,202: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:43:05,218: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.56
+INFO: 2023-08-28 13:43:05,221: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:43:24,926: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:43:24,979: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 13:43:24,980: Unable to save metrics to report\metrics.json. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 13:43:24,981: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:43:25,201: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+ERROR: 2023-08-28 13:43:25,202: Unable to save metrics to report\metrics.json. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 13:43:25,204: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:43:25,208: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 13:43:25,209: Unable to save metrics to report\metrics.json. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 13:43:25,209: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:43:25,213: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 13:43:25,213: Unable to save metrics to report\metrics.json. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 13:43:25,214: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:43:25,230: DecisionTreeRegressor - RMSE: 0.66 - MAE: 0.43 - R2 Score: 0.57
+ERROR: 2023-08-28 13:43:25,231: Unable to save metrics to report\metrics.json. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 13:43:25,232: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:45:45,288: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:45:45,343: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:45:45,346: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:45:45,569: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 13:45:45,575: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:45:45,578: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 13:45:45,579: Unable to save metrics to report\metrics.json. Error: Extra data: line 2 column 1 (char 152)
+INFO: 2023-08-28 13:45:45,580: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:45:45,584: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 13:45:45,584: Unable to save metrics to report\metrics.json. Error: Extra data: line 2 column 1 (char 152)
+INFO: 2023-08-28 13:45:45,585: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:45:45,601: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.45 - R2 Score: 0.54
+ERROR: 2023-08-28 13:45:45,602: Unable to save metrics to report\metrics.json. Error: Extra data: line 2 column 1 (char 152)
+INFO: 2023-08-28 13:45:45,603: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:48:39,371: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:48:39,424: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 13:48:39,425: Unable to save metrics to report\metrics.json. Error: write() argument must be str, not None
+INFO: 2023-08-28 13:48:39,426: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:48:39,653: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+ERROR: 2023-08-28 13:48:39,656: Unable to save metrics to report\metrics.json. Error: write() argument must be str, not None
+INFO: 2023-08-28 13:48:39,658: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:48:39,661: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 13:48:39,662: Unable to save metrics to report\metrics.json. Error: Extra data: line 13 column 2 (char 259)
+INFO: 2023-08-28 13:48:39,662: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:48:39,666: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 13:48:39,667: Unable to save metrics to report\metrics.json. Error: Extra data: line 13 column 2 (char 259)
+INFO: 2023-08-28 13:48:39,667: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:48:39,685: DecisionTreeRegressor - RMSE: 0.65 - MAE: 0.42 - R2 Score: 0.58
+ERROR: 2023-08-28 13:48:39,686: Unable to save metrics to report\metrics.json. Error: Extra data: line 13 column 2 (char 259)
+INFO: 2023-08-28 13:48:39,687: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:49:18,105: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:49:18,157: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:49:18,160: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:49:18,382: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 13:49:18,413: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:49:18,418: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 13:49:18,418: Unable to save metrics to report\metrics.json. Error: Extra data: line 13 column 2 (char 259)
+INFO: 2023-08-28 13:49:18,419: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:49:18,422: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 13:49:18,423: Unable to save metrics to report\metrics.json. Error: Extra data: line 13 column 2 (char 259)
+INFO: 2023-08-28 13:49:18,423: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:49:18,443: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
+ERROR: 2023-08-28 13:49:18,444: Unable to save metrics to report\metrics.json. Error: Extra data: line 13 column 2 (char 259)
+INFO: 2023-08-28 13:49:18,445: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:50:02,750: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:50:02,806: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:50:02,809: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:50:03,030: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 13:50:03,034: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:50:03,038: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 13:50:03,040: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:50:03,043: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 13:50:03,045: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:50:03,060: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-28 13:50:03,062: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:51:14,255: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:51:14,308: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:51:14,311: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:51:14,533: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 13:51:14,538: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:51:14,542: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 13:51:14,543: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:51:14,547: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 13:51:14,549: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:51:14,565: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-28 13:51:14,568: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 13:59:32,899: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 13:59:32,950: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 13:59:32,952: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 13:59:33,178: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 13:59:33,185: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 13:59:33,190: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 13:59:33,191: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 13:59:33,194: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 13:59:33,196: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 13:59:33,213: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.54
+INFO: 2023-08-28 13:59:33,215: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 14:00:21,834: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:00:21,887: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:00:21,891: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 14:00:22,117: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 14:00:22,121: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 14:00:22,124: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 14:00:22,126: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 14:00:22,130: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 14:00:22,132: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 14:00:22,147: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-28 14:00:22,150: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 14:01:34,434: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:01:34,486: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:01:34,489: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 14:01:34,714: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 14:01:34,719: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 14:01:34,722: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 14:01:34,724: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 14:01:34,728: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 14:01:34,730: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 14:01:34,746: DecisionTreeRegressor - RMSE: 0.65 - MAE: 0.43 - R2 Score: 0.58
+INFO: 2023-08-28 14:01:34,748: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 14:02:29,280: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:02:29,334: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:02:29,338: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 14:02:29,559: GradientBoostingRegressor - RMSE: 0.49 - MAE: 0.37 - R2 Score: 0.76
+INFO: 2023-08-28 14:02:29,562: 'GradientBoostingRegressor()' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 14:02:29,566: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 14:02:29,568: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 14:02:29,571: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 14:02:29,573: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 14:02:29,588: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-28 14:02:29,591: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'

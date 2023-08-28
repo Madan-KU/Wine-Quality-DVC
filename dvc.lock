@@ -1,0 +1,111 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src\S01_load_data.py
+    deps:
+    - path: data\remote\winequality-red.csv
+      hash: md5
+      md5: 6a883fd98624e18c0b7ce251f4fab4fb
+      size: 100951
+    - path: modules\data_loader.py
+      hash: md5
+      md5: 0a3900428510dc51ad3774fb7db14be7
+      size: 732
+    - path: modules\logger_configurator.py
+      hash: md5
+      md5: e286601c2c429c503afaff8df14eefd6
+      size: 513
+    - path: src\S01_load_data.py
+      hash: md5
+      md5: 18f6e99e9c67fd2d251ee3b3c2551ea0
+      size: 805
+    outs:
+    - path: data\raw\winequality-red.csv
+      hash: md5
+      md5: 2d2440983194f97ea8ea940257054caf
+      size: 95085
+  clean_data:
+    cmd: python src\S02_clean_data.py
+    deps:
+    - path: data\raw\winequality-red.csv
+      hash: md5
+      md5: 2d2440983194f97ea8ea940257054caf
+      size: 95085
+    - path: modules\data_loader.py
+      hash: md5
+      md5: 0a3900428510dc51ad3774fb7db14be7
+      size: 732
+    - path: modules\logger_configurator.py
+      hash: md5
+      md5: e286601c2c429c503afaff8df14eefd6
+      size: 513
+    - path: src\S02_clean_data.py
+      hash: md5
+      md5: ea7f49a4709c7013a846a370755968d8
+      size: 1277
+    outs:
+    - path: data\cleansed\winequality-red.csv
+      hash: md5
+      md5: bc4ca3daf1548cd1b1fca2ed06e2eb62
+      size: 98283
+  transform_data:
+    cmd: python src\S03_transform_data.py
+    deps:
+    - path: data\cleansed\winequality-red.csv
+      hash: md5
+      md5: bc4ca3daf1548cd1b1fca2ed06e2eb62
+      size: 98283
+    - path: modules\data_loader.py
+      hash: md5
+      md5: 0a3900428510dc51ad3774fb7db14be7
+      size: 732
+    - path: modules\logger_configurator.py
+      hash: md5
+      md5: e286601c2c429c503afaff8df14eefd6
+      size: 513
+    - path: src\S03_transform_data.py
+      hash: md5
+      md5: e2cf9bab59f0d22a8938fcdda21d92de
+      size: 998
+    outs:
+    - path: data\transformed\winequality-red.csv
+      hash: md5
+      md5: bc4ca3daf1548cd1b1fca2ed06e2eb62
+      size: 98283
+  model_training_and_evaluate:
+    cmd: python src\S04_model_training_and_evaluate.py --config=params.yaml
+    deps:
+    - path: modules\data_loader.py
+      hash: md5
+      md5: 0a3900428510dc51ad3774fb7db14be7
+      size: 732
+    - path: modules\logger_configurator.py
+      hash: md5
+      md5: e286601c2c429c503afaff8df14eefd6
+      size: 513
+    - path: params.yaml
+      hash: md5
+      md5: d58efc6112ad41bc73407984984477ac
+      size: 1586
+    - path: src\S04_model_training_and_evaluate.py
+      hash: md5
+      md5: cb4f588d6ffcd5ff9fc7e22909f68bd1
+      size: 4428
+    params:
+      params.yaml:
+        model.GradientBoostingRegressor.params.learning_rate: 0.1
+        model.GradientBoostingRegressor.params.n_estimators: 100
+        model.Lasso.params.alpha: 1.0
+        model.Ridge.params.alpha: 1.0
+        model.SVR.params.C: 1.0
+        model.SVR.params.kernel: rbf
+    outs:
+    - path: report\metrics.json
+      hash: md5
+      md5: 8e54587684bfb3c1b6f01e327cbb3dce
+      size: 1294
+    - path: saved_models/
+      hash: md5
+      md5: 5250ad3ebae1dd6ce469dfa34a3b2ddc.dir
+      size: 357229
+      nfiles: 5

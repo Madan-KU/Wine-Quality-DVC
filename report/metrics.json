@@ -1,0 +1,52 @@
+{
+    "SVR": {
+        "metrics": {
+            "rmse": 0.9149542837532878,
+            "mae": 0.694427812860458,
+            "r2": 0.17156907289405643
+        },
+        "hyperparameters": {
+            "kernel": "rbf",
+            "C": 1.0
+        }
+    },
+    "GradientBoostingRegressor": {
+        "metrics": {
+            "rmse": 0.49010934212370827,
+            "mae": 0.36734731458902314,
+            "r2": 0.7622921764577274
+        },
+        "hyperparameters": {
+            "n_estimators": 100,
+            "learning_rate": 0.1
+        }
+    },
+    "Ridge": {
+        "metrics": {
+            "rmse": 0.8161645719188603,
+            "mae": 0.6422110168747823,
+            "r2": 0.34080638514953576
+        },
+        "hyperparameters": {
+            "alpha": 1.0
+        }
+    },
+    "Lasso": {
+        "metrics": {
+            "rmse": 0.9981016689858636,
+            "mae": 0.8223135554387132,
+            "r2": 0.014158542323784329
+        },
+        "hyperparameters": {
+            "alpha": 1.0
+        }
+    },
+    "DecisionTreeRegressor": {
+        "metrics": {
+            "rmse": 0.6723193513392168,
+            "mae": 0.44031250000000005,
+            "r2": 0.5526898659511041
+        },
+        "hyperparameters": {}
+    }
+}

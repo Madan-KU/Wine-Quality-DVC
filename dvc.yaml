@@ -1,0 +1,54 @@
+stages:
+  load_data:
+    cmd: python src\S01_load_data.py
+    deps:
+      - modules\logger_configurator.py
+      - modules\data_loader.py
+      - src\S01_load_data.py
+      - data\remote\winequality-red.csv
+    outs:
+      - data\raw\winequality-red.csv
+
+  clean_data:
+      cmd: python src\S02_clean_data.py
+      deps:
+        - modules\logger_configurator.py
+        - modules\data_loader.py
+        - src\S02_clean_data.py
+        - data\raw\winequality-red.csv
+      outs:
+        - data\cleansed\winequality-red.csv
+
+  transform_data:
+      cmd: python src\S03_transform_data.py
+      deps:
+        - modules\logger_configurator.py
+        - modules\data_loader.py
+        - src\S03_transform_data.py
+        - data\cleansed\winequality-red.csv
+      outs:
+        - data\transformed\winequality-red.csv
+
+  model_training_and_evaluate:
+    cmd: python src\S04_model_training_and_evaluate.py --config=params.yaml
+    deps:
+      - src\S04_model_training_and_evaluate.py
+      - modules\data_loader.py
+      - modules\logger_configurator.py
+      - params.yaml
+    metrics:
+      - report\metrics.json:
+          cache: false
+    params:
+      - model.SVR.params.kernel
+      - model.SVR.params.C
+      - model.GradientBoostingRegressor.params.n_estimators
+      - model.GradientBoostingRegressor.params.learning_rate
+      - model.Ridge.params.alpha
+      - model.Lasso.params.alpha
+    outs:
+      - saved_models/
+
+
+
+  

@@ -1,7 +1,7 @@
 import logging
 import yaml
 
-def configure_logger(config_path='parameters.yaml'):
+def configure_logger(config_path='params.yaml'):
     # Read the YAML configuration
     with open(config_path, 'r') as file:
         config = yaml.safe_load(file)
