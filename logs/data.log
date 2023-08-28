@@ -279,3 +279,363 @@ INFO: 2023-08-28 14:21:57,140: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
 INFO: 2023-08-28 14:21:57,142: 'Lasso()' saved to 'saved_models\Lasso'
 INFO: 2023-08-28 14:21:57,159: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.43 - R2 Score: 0.56
 INFO: 2023-08-28 14:21:57,163: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 14:34:25,920: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:34:25,992: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:34:25,997: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 14:34:26,109: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-28 14:34:26,113: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 14:34:26,116: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 14:34:26,119: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 14:34:26,122: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 14:34:26,127: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 14:34:26,146: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.43 - R2 Score: 0.56
+INFO: 2023-08-28 14:34:26,150: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 14:44:41,950: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:44:42,001: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:45:52,139: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:45:52,191: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:47:00,711: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:47:00,762: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:48:10,580: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:48:10,630: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:50:53,858: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:50:53,911: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:52:06,605: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:52:06,656: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:53:04,953: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:53:05,006: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:54:43,568: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:54:43,620: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:55:15,663: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:55:15,715: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 14:56:11,953: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 14:56:12,006: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 15:30:13,752: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:30:13,808: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 15:32:37,218: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:32:37,270: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 15:32:37,278: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:32:37,390: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-28 15:32:37,396: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:32:37,400: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 15:32:37,406: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:32:37,409: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 15:32:37,415: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:32:37,431: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.43 - R2 Score: 0.55
+INFO: 2023-08-28 15:32:37,437: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:33:26,550: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:33:26,600: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 15:33:26,607: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:33:26,720: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-28 15:33:26,727: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:33:26,731: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 15:33:26,735: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:33:26,738: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 15:33:26,745: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:33:26,762: DecisionTreeRegressor - RMSE: 0.66 - MAE: 0.43 - R2 Score: 0.56
+INFO: 2023-08-28 15:33:26,769: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:33:56,735: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:33:56,791: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 15:33:56,799: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:33:56,913: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-28 15:33:56,920: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:33:56,924: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 15:33:56,930: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:33:56,933: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 15:33:56,938: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:33:56,954: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.43 - R2 Score: 0.55
+INFO: 2023-08-28 15:33:56,959: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:34:59,881: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:34:59,935: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 15:34:59,943: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:35:00,058: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-28 15:35:00,064: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:35:00,068: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 15:35:00,074: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:35:00,077: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 15:35:00,082: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:35:00,108: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.43 - R2 Score: 0.56
+INFO: 2023-08-28 15:35:00,114: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:37:14,452: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:37:14,504: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 15:37:14,511: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:37:14,623: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-28 15:37:14,630: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:37:14,635: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 15:37:14,640: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:37:14,644: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 15:37:14,650: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:37:14,666: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-28 15:37:14,673: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:38:03,073: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:38:03,126: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 15:38:03,130: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:38:03,131: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:38:03,248: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 15:38:03,251: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:38:03,253: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:38:03,257: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 15:38:03,260: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:38:03,261: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:38:03,264: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 15:38:03,267: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:38:03,268: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:38:03,284: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.54
+ERROR: 2023-08-28 15:38:03,290: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:38:03,291: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:40:08,451: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:40:08,515: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 15:40:08,519: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:40:08,520: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:40:08,632: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 15:40:08,636: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:40:08,638: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:40:08,641: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 15:40:08,645: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:40:08,645: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:40:08,649: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 15:40:08,652: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:40:08,653: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:40:08,670: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.55
+ERROR: 2023-08-28 15:40:08,674: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:40:08,675: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:44:30,201: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:44:30,275: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 15:44:30,279: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:44:30,281: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:44:30,393: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 15:44:30,397: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:44:30,398: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:44:30,402: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 15:44:30,406: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:44:30,407: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:44:30,410: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 15:44:30,413: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:44:30,414: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:44:30,432: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.43 - R2 Score: 0.56
+ERROR: 2023-08-28 15:44:30,437: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:44:30,438: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:45:19,717: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:45:19,769: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 15:45:19,773: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:45:19,774: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:45:19,888: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.73
+ERROR: 2023-08-28 15:45:19,893: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:45:19,894: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:45:19,898: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 15:45:19,902: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:45:19,903: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:45:19,907: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 15:45:19,910: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:45:19,910: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:45:19,927: DecisionTreeRegressor - RMSE: 0.65 - MAE: 0.42 - R2 Score: 0.58
+ERROR: 2023-08-28 15:45:19,932: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:45:19,933: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:46:11,811: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:46:11,863: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 15:46:11,868: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:46:11,869: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:46:11,984: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 15:46:11,988: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:46:11,990: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:46:11,994: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 15:46:11,997: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:46:11,998: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:46:12,001: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 15:46:12,005: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:46:12,005: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:46:12,022: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.54
+ERROR: 2023-08-28 15:46:12,026: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:46:12,027: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:47:18,079: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:47:18,135: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 15:47:18,140: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:47:18,142: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:47:18,256: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 15:47:18,260: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:47:18,261: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:47:18,265: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 15:47:18,268: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:47:18,270: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:47:18,273: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 15:47:18,276: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:47:18,277: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:47:18,293: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.54
+ERROR: 2023-08-28 15:47:18,297: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:47:18,298: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:48:23,044: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:48:23,094: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 15:48:23,099: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:48:23,216: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-28 15:48:23,221: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:48:23,225: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 15:48:23,228: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:48:23,232: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 15:48:23,235: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:48:23,253: DecisionTreeRegressor - RMSE: 0.65 - MAE: 0.42 - R2 Score: 0.58
+INFO: 2023-08-28 15:48:23,256: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 15:49:31,366: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 15:49:31,418: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 15:49:31,422: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:49:31,423: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 15:49:31,537: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 15:49:31,541: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:49:31,542: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 15:49:31,545: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 15:49:31,549: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:49:31,549: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 15:49:31,553: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 15:49:31,557: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:49:31,558: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 15:49:31,575: DecisionTreeRegressor - RMSE: 0.66 - MAE: 0.43 - R2 Score: 0.57
+ERROR: 2023-08-28 15:49:31,578: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 15:49:31,579: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 16:00:10,004: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 16:00:10,062: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 16:00:10,066: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:00:10,068: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 16:00:10,181: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 16:00:10,185: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:00:10,187: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 16:00:10,190: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 16:00:10,194: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:00:10,195: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 16:00:10,199: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 16:00:10,202: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:00:10,203: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 16:00:10,218: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.55
+ERROR: 2023-08-28 16:00:10,222: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:00:10,223: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 16:01:50,189: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 16:01:50,249: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 16:01:50,253: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:01:50,254: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 16:01:50,368: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 16:01:50,371: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:01:50,372: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 16:01:50,377: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 16:01:50,379: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:01:50,379: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 16:01:50,384: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 16:01:50,387: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:01:50,387: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 16:01:50,403: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.43 - R2 Score: 0.55
+ERROR: 2023-08-28 16:01:50,407: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:01:50,408: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 16:02:13,490: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 16:02:13,545: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 16:02:13,553: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 16:02:13,667: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 16:02:13,671: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:02:13,672: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 16:02:13,675: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 16:02:13,679: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:02:13,679: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 16:02:13,683: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 16:02:13,685: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:02:13,686: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 16:02:13,703: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.43 - R2 Score: 0.56
+ERROR: 2023-08-28 16:02:13,707: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:02:13,708: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 16:03:04,060: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 16:03:04,111: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 16:03:04,117: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:03:04,118: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 16:03:04,235: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 16:03:04,239: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:03:04,241: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 16:03:04,244: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 16:03:04,248: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:03:04,249: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 16:03:04,253: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 16:03:04,257: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:03:04,258: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 16:03:04,274: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
+ERROR: 2023-08-28 16:03:04,278: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:03:04,279: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 16:05:31,238: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 16:05:31,289: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 16:05:31,292: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:05:31,294: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 16:05:31,406: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 16:05:31,409: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:05:31,410: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 16:05:31,413: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 16:05:31,416: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:05:31,417: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 16:05:31,420: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 16:05:31,423: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:05:31,423: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 16:05:31,438: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.54
+ERROR: 2023-08-28 16:05:31,442: Unable to save metrics or parameters. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:05:31,443: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 16:05:55,210: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 16:05:55,263: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 16:05:55,267: Unable to save metrics. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:05:55,269: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 16:05:55,383: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 16:05:55,388: Unable to save metrics. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:05:55,389: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 16:05:55,392: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 16:05:55,395: Unable to save metrics. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:05:55,395: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 16:05:55,400: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 16:05:55,403: Unable to save metrics. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:05:55,404: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 16:05:55,421: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.43 - R2 Score: 0.56
+ERROR: 2023-08-28 16:05:55,424: Unable to save metrics. Error: Expecting value: line 1 column 1 (char 0)
+INFO: 2023-08-28 16:05:55,425: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 16:08:05,958: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 16:08:06,014: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 16:08:06,019: Unable to save metrics. Error: 'str' object has no attribute 'read'
+INFO: 2023-08-28 16:08:06,020: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 16:08:06,136: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 16:08:06,140: Unable to save metrics. Error: 'str' object has no attribute 'read'
+INFO: 2023-08-28 16:08:06,142: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 16:08:06,146: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 16:08:06,150: Unable to save metrics. Error: 'str' object has no attribute 'read'
+INFO: 2023-08-28 16:08:06,150: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 16:08:06,154: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 16:08:06,158: Unable to save metrics. Error: 'str' object has no attribute 'read'
+INFO: 2023-08-28 16:08:06,159: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 16:08:06,175: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.45 - R2 Score: 0.55
+ERROR: 2023-08-28 16:08:06,179: Unable to save metrics. Error: 'str' object has no attribute 'read'
+INFO: 2023-08-28 16:08:06,180: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 16:10:42,747: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 16:10:42,803: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+ERROR: 2023-08-28 16:10:42,807: Unable to save metrics. Error: 'str' object has no attribute 'read'
+INFO: 2023-08-28 16:10:42,808: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 16:10:42,922: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+ERROR: 2023-08-28 16:10:42,926: Unable to save metrics. Error: 'str' object has no attribute 'read'
+INFO: 2023-08-28 16:10:42,927: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 16:10:42,930: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+ERROR: 2023-08-28 16:10:42,934: Unable to save metrics. Error: 'str' object has no attribute 'read'
+INFO: 2023-08-28 16:10:42,935: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 16:10:42,938: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+ERROR: 2023-08-28 16:10:42,941: Unable to save metrics. Error: 'str' object has no attribute 'read'
+INFO: 2023-08-28 16:10:42,942: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 16:10:42,961: DecisionTreeRegressor - RMSE: 0.66 - MAE: 0.43 - R2 Score: 0.57
+ERROR: 2023-08-28 16:10:42,965: Unable to save metrics. Error: 'str' object has no attribute 'read'
+INFO: 2023-08-28 16:10:42,966: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 16:13:22,954: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 16:13:23,008: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 16:13:23,015: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 16:13:23,129: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-28 16:13:23,135: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 16:13:23,139: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 16:13:23,144: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 16:13:23,148: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 16:13:23,153: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 16:13:23,168: DecisionTreeRegressor - RMSE: 0.66 - MAE: 0.44 - R2 Score: 0.57
+INFO: 2023-08-28 16:13:23,174: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-28 16:15:38,502: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-28 16:15:38,554: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-28 16:15:38,559: 'SVR()' saved to 'saved_models\SVR'
+INFO: 2023-08-28 16:15:38,672: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-28 16:15:38,677: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor'
+INFO: 2023-08-28 16:15:38,681: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-28 16:15:38,687: 'Ridge()' saved to 'saved_models\Ridge'
+INFO: 2023-08-28 16:15:38,690: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-28 16:15:38,695: 'Lasso()' saved to 'saved_models\Lasso'
+INFO: 2023-08-28 16:15:38,710: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-28 16:15:38,717: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'

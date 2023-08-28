@@ -15,6 +15,7 @@ from sklearn.tree import DecisionTreeRegressor
 
 from modules.data_loader import read_data
 from modules.logger_configurator import configure_logger
+from modules.save_metrics import save_metrics
 
 config= None
 def read_yaml_config(file_path):
@@ -52,63 +53,11 @@ def train_and_evaluate(X_train, X_test, y_train, y_test, model_name, model_param
     mae = mean_absolute_error(y_test, y_pred)
     r2 = r2_score(y_test, y_pred)
     logging.info(f"{model_name} - RMSE: {rmse:.2f} - MAE: {mae:.2f} - R2 Score: {r2:.2f}")
-    
-    #Saving Metrics to json file
-    params_file_path =config['reports']['params']
-    metrics_file_path= config['reports']['metrics']
-    metrics_history_path=config['reports']['metrics_history']
 
-    try:
-        """Saving metrics history"""
-        with open(metrics_history_path, "a") as file:
-            metrics = {
-                "timestamp": str(datetime.datetime.now()),
-                "model": model_name,
-                "metrics": {
-                    "rmse": rmse,
-                    "mae": mae,
-                    "r2": r2
-                },
-                # "features": features,
-                "hyperparameters": model_params
-            }
-            file.write(json.dumps(metrics) +','+ '\n')
-    except Exception as e:
-        logging.error(f"Unable to save metrics history to {metrics_history_path}. Error: {e}")
+    save_metrics(model_name, model_params, rmse, mae, r2)
 
-    try:
-        """First, read existing data if the file already exists"""
-        if os.path.exists(metrics_file_path):
-            with open(metrics_file_path, "r") as file:
-                data = json.load(file)
-        else:
-            data = {}
-
-        data[model_name] = {
-            "metrics": {"rmse": rmse, "mae": mae,"r2": r2},
-        }
-
-        with open(metrics_file_path, "w") as file:
-            json.dump(data, file, indent=4)
-
-        
-        if os.path.exists(params_file_path):
-            with open(params_file_path, "r") as file:
-                params_data = json.load(file)
-        else:
-            params_data = {}
-
-        params_data[model_name] = {
-            "hyperparameters": model_params
-        }
-
-        with open(params_file_path, "w") as file:
-            json.dump(params_data, file, indent=4)
-
-    except Exception as e:
-        logging.error(f"Unable to save metrics or parameters. Error: {e}")
-        
     return model_name, model
+
 
 
 def save_model(model_name, model, saved_model_directory):

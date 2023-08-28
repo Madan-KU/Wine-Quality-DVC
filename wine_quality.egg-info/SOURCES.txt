@@ -8,6 +8,7 @@ models/support_vector_regression_model.py
 modules/__init__.py
 modules/data_loader.py
 modules/logger_configurator.py
+modules/save_metrics.py
 src/S01_load_data.py
 src/S02_clean_data.py
 src/S03_transform_data.py
