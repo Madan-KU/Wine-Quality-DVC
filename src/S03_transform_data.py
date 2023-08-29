@@ -1,4 +1,5 @@
 import os
+import pickle
 import logging
 import pandas as pd
 
@@ -14,6 +15,13 @@ config = read_config('params.yaml')
 def transform_data(df):
     scaler = StandardScaler()
     df_scaled = pd.DataFrame(scaler.fit_transform(df), columns=df.columns)
+
+    """Storing scaler as pickle file for utilization in prediction service""" 
+    scaler_filename = "scaler.pkl"
+    scaler_path = os.path.join(config['scaler_dir'], scaler_filename)   
+    with open(scaler_path, 'wb') as file:
+        pickle.dump(scaler, file)
+
     return df_scaled
 
 def main():

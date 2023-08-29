@@ -17,8 +17,8 @@ stages:
       size: 513
     - path: src\S01_load_data.py
       hash: md5
-      md5: 26833c283ee6e5e081112f5626d29d65
-      size: 646
+      md5: 712f9a9e6b8fd8bd9a2631128475fd68
+      size: 648
     outs:
     - path: data\raw\winequality-red.csv
       hash: md5
@@ -65,8 +65,8 @@ stages:
       size: 513
     - path: src\S03_transform_data.py
       hash: md5
-      md5: 96a1e0662aa373f6eab6303c73f0c9da
-      size: 865
+      md5: 0a28ecd36ee0305e36b5c410e3cdf6e6
+      size: 1154
     outs:
     - path: data\transformed\winequality-red.csv
       hash: md5
@@ -85,12 +85,12 @@ stages:
       size: 513
     - path: params.yaml
       hash: md5
-      md5: e4b1cd43369c512cd1244301bae396b6
-      size: 1679
+      md5: c59c6e48582db30579c5ea5b033da20e
+      size: 1808
     - path: src\S04_model_training_and_evaluate.py
       hash: md5
-      md5: bc5ef2c11e5823ac16985773ad2c7e37
-      size: 2911
+      md5: 72d70d6308a1695ff306b97b1f4ec8d4
+      size: 2923
     params:
       params.yaml:
         model.GradientBoostingRegressor.params.learning_rate: 0.1
@@ -100,19 +100,19 @@ stages:
         model.SVR.params.C: 1.0
         model.SVR.params.kernel: rbf
     outs:
+    - path: model_artifacts\saved_models
+      hash: md5
+      md5: 2a833c082be8013efe97a6ca1d7e3838.dir
+      size: 291088
+      nfiles: 5
     - path: report\metrics.json
       hash: md5
-      md5: 4919d00906e800f966d5d3d8349dda6b
+      md5: 247fb0193a4fd2d1ad1d92cb6965d23b
       size: 920
     - path: report\params.json
       hash: md5
       md5: 70765cff5638e1ca0d9409ac78985e6f
       size: 523
-    - path: saved_models/
-      hash: md5
-      md5: ce2e1d2fca79fea37a3730397ddb6a8d.dir
-      size: 290368
-      nfiles: 5
   model_to_prediction_service:
     cmd: python  src\S05_model_to_prediction_service.py
     deps:
@@ -126,9 +126,9 @@ stages:
       size: 182
     - path: params.yaml
       hash: md5
-      md5: e4b1cd43369c512cd1244301bae396b6
-      size: 1679
+      md5: 993141a8039ddeaea5afa5d505dcf7a2
+      size: 1731
     - path: src\S05_model_to_prediction_service.py
       hash: md5
-      md5: 545d08e36a717305cb5939f5caaec8f9
-      size: 1381
+      md5: bc2ddb47de16c29b3081b3b1b0eb2fd9
+      size: 1390

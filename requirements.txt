@@ -7,4 +7,5 @@ pytest
 tox
 flask
 guincorn
+
 -e .

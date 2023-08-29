@@ -59,7 +59,8 @@ model:
 
 
 
-saved_model_dir: saved_models
+saved_model_dir: model_artifacts\saved_models 
+scaler_dir: model_artifacts\scaler
 
 reports:
   reports: report
@@ -69,4 +70,5 @@ reports:
 
 prediction_app:
   root_dir: prediction_app
-  model: prediction_app\serving_models
+  model: prediction_app\prediction_resources\serving_models\
+  scaler: prediction_app\prediction_resources\scaler

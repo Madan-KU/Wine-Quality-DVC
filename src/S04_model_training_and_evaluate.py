@@ -58,7 +58,7 @@ def save_model(model_name, model, saved_model_directory):
     """Save the trained model to a directory."""
     if not os.path.exists(saved_model_directory):
         os.makedirs(saved_model_directory)
-    filepath = os.path.join(saved_model_directory, model_name)
+    filepath = os.path.join(saved_model_directory, model_name+ '.pkl')
     with open(filepath, 'wb') as file:
         pickle.dump(model, file)
         logging.info(f"'{model}' saved to '{filepath}'")

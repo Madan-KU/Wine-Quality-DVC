@@ -1,9 +1,11 @@
 import os
 import pickle
-import pandas as pd
-from flask import Flask, request, render_template, send_from_directory, redirect, url_for,jsonify
 import joblib
 import numpy as np
+import pandas as pd
+
+from flask import Flask, request, render_template, send_from_directory, redirect, url_for,jsonify
+
 import prediction_app_config as app_config
 import prediction as pred
 
@@ -26,8 +28,10 @@ def home():
                 return render_template("Predict.html",prediction=prediction)
             
             elif request.json:
-                prediction=api_response(request)
-                return jsonify(prediction)
+                data = request.json
+                prediction = pred.predict([data])
+                # prediction=api_response(request)
+                return jsonify({"prediction": prediction})
 
         
         except FileNotFoundError as e:

@@ -1,5 +1,5 @@
 import yaml
-import joblib
+import pickle
 import prediction_app_config as app_config
 
 
@@ -12,8 +12,11 @@ def read_yaml_config(file_path):
 def predict(data):
     config = read_yaml_config('params.yaml')
     prediction_app_model=config['prediction_app_model']
-    model=joblib.load(prediction_app_model)
+
+    s
+    model=pickle.load(prediction_app_model)
     print("Model loaded")
+    
     prediction=model.predict(data)
     print(prediction)
     return prediction

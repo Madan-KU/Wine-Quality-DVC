@@ -66,3 +66,85 @@ INFO: 2023-08-29 15:59:16,295: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
 INFO: 2023-08-29 15:59:16,301: 'Lasso()' saved to 'saved_models\Lasso'
 INFO: 2023-08-29 15:59:16,317: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
 INFO: 2023-08-29 15:59:16,325: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor'
+INFO: 2023-08-29 20:29:45,280: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 20:29:45,301: 'winequality-red.csv' loaded to 'data\raw'
+INFO: 2023-08-29 20:29:46,263: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 20:29:46,286: 'winequality-red.csv' loaded to 'data\transformed'
+INFO: 2023-08-29 20:29:47,388: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 20:29:47,441: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-29 20:30:22,780: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 20:30:22,832: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-29 20:30:22,839: 'SVR()' saved to 'saved_models\SVR.pkl'
+INFO: 2023-08-29 20:30:22,955: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-29 20:30:22,963: 'GradientBoostingRegressor(n_estimators=50)' saved to 'saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-29 20:30:22,966: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-29 20:30:22,972: 'Ridge()' saved to 'saved_models\Ridge.pkl'
+INFO: 2023-08-29 20:30:22,975: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-29 20:30:22,980: 'Lasso()' saved to 'saved_models\Lasso.pkl'
+INFO: 2023-08-29 20:30:22,997: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-29 20:30:23,004: 'DecisionTreeRegressor()' saved to 'saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-29 20:53:58,101: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 20:56:28,406: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 20:56:28,428: 'winequality-red.csv' loaded to 'data\transformed'
+INFO: 2023-08-29 20:56:29,524: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 20:56:29,579: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-29 20:56:29,586: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-29 20:56:29,702: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-29 20:56:29,711: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-29 20:56:29,714: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-29 20:56:29,720: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-29 20:56:29,723: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-29 20:56:29,728: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-29 20:56:29,745: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-29 20:56:29,751: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-29 20:59:59,865: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 20:59:59,922: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-29 20:59:59,929: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-29 21:00:00,044: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-29 21:00:00,051: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-29 21:00:00,055: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-29 21:00:00,060: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-29 21:00:00,063: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-29 21:00:00,069: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-29 21:00:00,084: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.56
+INFO: 2023-08-29 21:00:00,092: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-29 21:00:38,913: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 21:00:38,970: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-29 21:00:38,976: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-29 21:00:39,092: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-29 21:00:39,098: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-29 21:00:39,103: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-29 21:00:39,108: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-29 21:00:39,111: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-29 21:00:39,117: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-29 21:00:39,133: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-29 21:00:39,138: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-29 21:01:35,088: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 21:01:35,145: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-29 21:01:35,152: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-29 21:01:35,265: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-29 21:01:35,272: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-29 21:01:35,276: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-29 21:01:35,283: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-29 21:01:35,288: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-29 21:01:35,294: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-29 21:01:35,310: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-29 21:01:35,317: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-29 21:30:31,875: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 21:30:31,929: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-29 21:30:31,936: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-29 21:30:32,051: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-29 21:30:32,059: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-29 21:30:32,062: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-29 21:30:32,069: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-29 21:30:32,072: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-29 21:30:32,079: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-29 21:30:32,097: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.54
+INFO: 2023-08-29 21:30:32,103: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-29 21:42:34,919: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-29 21:43:47,128: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-29 21:43:47,128: Scaler copied from 'model_artifacts\scaler\scaler.pkl' to 'prediction_app\prediction_resources\scaler\scaler.pkl'.
+INFO: 2023-08-29 21:44:17,070: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-29 21:52:50,243: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-29 21:56:10,265: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-29 21:56:10,267: Scaler copied from 'model_artifacts\scaler\scaler.pkl' to 'prediction_app\prediction_resources\scaler\scaler.pkl'.
