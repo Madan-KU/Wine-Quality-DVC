@@ -1,19 +1,14 @@
 import os
 import logging
 import pandas as pd
-import yaml
-import sklearn
+
 from modules.data_loader import read_data
+from modules.read_config import read_config
 from modules.logger_configurator import configure_logger
 
 from sklearn.preprocessing import StandardScaler, LabelEncoder
-
-# Read the YAML configuration
-def read_yaml_config(file_path):
-    with open(file_path, 'r') as file:
-        return yaml.safe_load(file)
     
-config = read_yaml_config('params.yaml')
+config = read_config('params.yaml')
 
 
 def transform_data(df):

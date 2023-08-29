@@ -8,11 +8,17 @@ models/support_vector_regression_model.py
 modules/__init__.py
 modules/data_loader.py
 modules/logger_configurator.py
+modules/read_config.py
 modules/save_metrics.py
+prediction_app/__init__.py
+prediction_app/application.py
+prediction_app/prediction.py
+prediction_app/prediction_app_config.py
 src/S01_load_data.py
 src/S02_clean_data.py
 src/S03_transform_data.py
 src/S04_model_training_and_evaluate.py
+src/S05_model_to_prediction_service.py
 src/__init__.py
 tests/test_config.py
 wine_quality.egg-info/PKG-INFO

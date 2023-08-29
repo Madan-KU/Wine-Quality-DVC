@@ -21,4 +21,3 @@ def read_data(directory):
                 continue
 
     logging.warning(f"No CSV file found in {directory}.")
-    return None

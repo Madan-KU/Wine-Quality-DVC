@@ -1,19 +1,13 @@
 import os
-import logging
 import pandas as pd
-import yaml
-from modules.data_loader import read_data
+import logging
+
 from modules.logger_configurator import configure_logger
+from modules.read_config import read_config
+from modules.data_loader import read_data
 
 
-# Read the YAML configuration
-def read_yaml_config(file_path):
-    with open(file_path, 'r') as file:
-        return yaml.safe_load(file)
-    
-config = read_yaml_config('params.yaml')
-# print(f"config.yaml:{config}\n")
-
+config = read_config('params.yaml')
 
 def main():
     configure_logger()

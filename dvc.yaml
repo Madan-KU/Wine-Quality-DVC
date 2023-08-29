@@ -53,5 +53,17 @@ stages:
       - saved_models/
 
 
+  model_to_prediction_service:
+    cmd: python  src\S05_model_to_prediction_service.py
+    deps:
+      - src\S05_model_to_prediction_service.py
+      - modules\read_config.py
+      - modules\logger_configurator.py
+      - params.yaml
+    # outs:
+    #   - prediction_app\serving_models
+
+
+
 
   

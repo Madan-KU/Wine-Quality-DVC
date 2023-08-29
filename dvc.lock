@@ -9,16 +9,16 @@ stages:
       size: 100951
     - path: modules\data_loader.py
       hash: md5
-      md5: 0a3900428510dc51ad3774fb7db14be7
-      size: 732
+      md5: c53160dd8d91dfeae76a52b37622d4b6
+      size: 715
     - path: modules\logger_configurator.py
       hash: md5
       md5: e286601c2c429c503afaff8df14eefd6
       size: 513
     - path: src\S01_load_data.py
       hash: md5
-      md5: 18f6e99e9c67fd2d251ee3b3c2551ea0
-      size: 805
+      md5: 26833c283ee6e5e081112f5626d29d65
+      size: 646
     outs:
     - path: data\raw\winequality-red.csv
       hash: md5
@@ -33,16 +33,16 @@ stages:
       size: 95085
     - path: modules\data_loader.py
       hash: md5
-      md5: 0a3900428510dc51ad3774fb7db14be7
-      size: 732
+      md5: c53160dd8d91dfeae76a52b37622d4b6
+      size: 715
     - path: modules\logger_configurator.py
       hash: md5
       md5: e286601c2c429c503afaff8df14eefd6
       size: 513
     - path: src\S02_clean_data.py
       hash: md5
-      md5: ea7f49a4709c7013a846a370755968d8
-      size: 1277
+      md5: 2d292f73ca3df54a16120e5cb59b3186
+      size: 1158
     outs:
     - path: data\cleansed\winequality-red.csv
       hash: md5
@@ -57,16 +57,16 @@ stages:
       size: 98283
     - path: modules\data_loader.py
       hash: md5
-      md5: 0a3900428510dc51ad3774fb7db14be7
-      size: 732
+      md5: c53160dd8d91dfeae76a52b37622d4b6
+      size: 715
     - path: modules\logger_configurator.py
       hash: md5
       md5: e286601c2c429c503afaff8df14eefd6
       size: 513
     - path: src\S03_transform_data.py
       hash: md5
-      md5: e2cf9bab59f0d22a8938fcdda21d92de
-      size: 998
+      md5: 96a1e0662aa373f6eab6303c73f0c9da
+      size: 865
     outs:
     - path: data\transformed\winequality-red.csv
       hash: md5
@@ -77,20 +77,20 @@ stages:
     deps:
     - path: modules\data_loader.py
       hash: md5
-      md5: 0a3900428510dc51ad3774fb7db14be7
-      size: 732
+      md5: c53160dd8d91dfeae76a52b37622d4b6
+      size: 715
     - path: modules\logger_configurator.py
       hash: md5
       md5: e286601c2c429c503afaff8df14eefd6
       size: 513
     - path: params.yaml
       hash: md5
-      md5: d3ee18029998e05399ae69fc9ecb5a78
-      size: 1630
+      md5: e4b1cd43369c512cd1244301bae396b6
+      size: 1679
     - path: src\S04_model_training_and_evaluate.py
       hash: md5
-      md5: 115249821e4597a3f001333803838fb7
-      size: 3104
+      md5: bc5ef2c11e5823ac16985773ad2c7e37
+      size: 2911
     params:
       params.yaml:
         model.GradientBoostingRegressor.params.learning_rate: 0.1
@@ -102,14 +102,33 @@ stages:
     outs:
     - path: report\metrics.json
       hash: md5
-      md5: a38ad3b0d9f31624a3ae70923c1e0a0b
-      size: 921
+      md5: 4919d00906e800f966d5d3d8349dda6b
+      size: 920
     - path: report\params.json
       hash: md5
       md5: 70765cff5638e1ca0d9409ac78985e6f
       size: 523
     - path: saved_models/
       hash: md5
-      md5: 4f8231667cde29cb9fca472c78bcfecf.dir
-      size: 290944
+      md5: ce2e1d2fca79fea37a3730397ddb6a8d.dir
+      size: 290368
       nfiles: 5
+  model_to_prediction_service:
+    cmd: python  src\S05_model_to_prediction_service.py
+    deps:
+    - path: modules\logger_configurator.py
+      hash: md5
+      md5: e286601c2c429c503afaff8df14eefd6
+      size: 513
+    - path: modules\read_config.py
+      hash: md5
+      md5: 51609abfd1a81335e6409ee2dac3a8fd
+      size: 182
+    - path: params.yaml
+      hash: md5
+      md5: e4b1cd43369c512cd1244301bae396b6
+      size: 1679
+    - path: src\S05_model_to_prediction_service.py
+      hash: md5
+      md5: 545d08e36a717305cb5939f5caaec8f9
+      size: 1381

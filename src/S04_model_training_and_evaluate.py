@@ -1,26 +1,21 @@
 import os
-import json
-import yaml
-import logging
-import pickle
 import numpy as np
 import pandas as pd
-from sklearn.ensemble import GradientBoostingRegressor
+import pickle
+import logging
+
+from sklearn.svm import SVR
 from sklearn.linear_model import Lasso, Ridge
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import GradientBoostingRegressor
+
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
-from sklearn.svm import SVR
-from sklearn.tree import DecisionTreeRegressor
 
 from modules.data_loader import read_data
+from modules.read_config import read_config
 from modules.logger_configurator import configure_logger
 from modules.save_metrics import save_metrics
-
-config= None
-def read_yaml_config(file_path):
-    """Read and return the configuration from a YAML file."""
-    with open(file_path, 'r') as file:
-        return yaml.safe_load(file)
 
 
 def get_model(model_name, model_params):
@@ -73,7 +68,7 @@ def main():
     """Main function to load data, train, and evaluate models."""
     configure_logger()
     global config
-    config = read_yaml_config('params.yaml')
+    config = read_config('params.yaml')
     saved_model_directory = config['saved_model_dir']
 
     df, filename = read_data(config['data']['transformed'])
