@@ -2,7 +2,7 @@ numpy
 pandas
 dvc
 dvc[gdrive]
-sklearn
+scikit-learn
 pytest
 tox
 flask
