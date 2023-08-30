@@ -6,7 +6,7 @@ import logging
 def read_data(directory):
     if not os.path.exists(directory):
         logging.warning(f"Directory {directory} does not exist.")
-        return None
+        return None,'None'
     
     for file in os.listdir(directory):
         if file.endswith(".csv"):
@@ -21,3 +21,4 @@ def read_data(directory):
                 continue
 
     logging.warning(f"No CSV file found in {directory}.")
+    return None, 'None'

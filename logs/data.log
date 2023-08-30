@@ -148,3 +148,251 @@ INFO: 2023-08-29 21:44:17,070: Copied 'GradientBoostingRegressor' model to 'pred
 INFO: 2023-08-29 21:52:50,243: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
 INFO: 2023-08-29 21:56:10,265: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
 INFO: 2023-08-29 21:56:10,267: Scaler copied from 'model_artifacts\scaler\scaler.pkl' to 'prediction_app\prediction_resources\scaler\scaler.pkl'.
+INFO: 2023-08-29 21:57:22,436: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-29 21:57:22,438: Scaler copied from 'model_artifacts\scaler\scaler.pkl' to 'prediction_app\prediction_resources\scaler\scaler.pkl'.
+INFO: 2023-08-29 21:58:36,811: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-29 21:58:36,813: Scaler copied from 'model_artifacts\scaler\scaler.pkl' to 'prediction_app\prediction_resources\scaler\scaler.pkl'.
+INFO: 2023-08-29 21:59:27,799: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-29 21:59:27,801: Scaler copied from 'model_artifacts\scaler\scaler.pkl' to 'prediction_app\prediction_resources\scaler\scaler.pkl'.
+INFO: 2023-08-29 22:10:18,632: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 22:10:18,686: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-29 22:10:18,692: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-29 22:10:18,810: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-29 22:10:18,817: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-29 22:10:18,820: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-29 22:10:18,826: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-29 22:10:18,830: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-29 22:10:18,835: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-29 22:10:18,852: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.43 - R2 Score: 0.56
+INFO: 2023-08-29 22:10:18,858: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-29 22:10:19,268: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-29 22:10:19,269: Scaler copied from 'model_artifacts\scaler\scaler.pkl' to 'prediction_app\prediction_resources\scaler\scaler.pkl'.
+INFO: 2023-08-29 22:11:18,666: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 22:11:18,719: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-29 22:11:18,729: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-29 22:11:18,845: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-29 22:11:18,854: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-29 22:11:18,857: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-29 22:11:18,862: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-29 22:11:18,865: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-29 22:11:18,871: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-29 22:11:18,888: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.54
+INFO: 2023-08-29 22:11:18,894: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-29 22:11:19,306: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-29 22:11:19,307: Scaler copied from 'model_artifacts\scaler\scaler.pkl' to 'prediction_app\prediction_resources\scaler\scaler.pkl'.
+INFO: 2023-08-29 22:12:52,558: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-29 22:12:52,609: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-29 22:12:52,617: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-29 22:12:52,731: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-29 22:12:52,739: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-29 22:12:52,743: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-29 22:12:52,755: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-29 22:12:52,759: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-29 22:12:52,765: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-29 22:12:52,783: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.56
+INFO: 2023-08-29 22:12:52,789: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-29 22:12:53,180: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-29 22:12:53,182: Scaler copied from 'model_artifacts\scaler\scaler.pkl' to 'prediction_app\prediction_resources\scaler\scaler.pkl'.
+INFO: 2023-08-30 12:04:56,011: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 12:04:56,048: 'winequality-red.csv' loaded to 'data\transformed'
+INFO: 2023-08-30 12:09:16,049: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 12:09:16,072: 'winequality-red.csv_X' loaded to 'data\transformed'
+INFO: 2023-08-30 12:09:16,075: 'winequality-red.csv_y' loaded to 'data\transformed'
+INFO: 2023-08-30 12:10:47,739: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 12:10:47,765: 'X_winequality-red.csv' loaded to 'data\transformed'
+INFO: 2023-08-30 12:10:47,769: 'y_winequality-red.csv' loaded to 'data\transformed'
+INFO: 2023-08-30 12:13:16,682: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 12:13:16,684: Data read from data\cleansed
+INFO: 2023-08-30 12:13:16,688: Scaler saved at model_artifacts\scaler\scaler.pkl
+INFO: 2023-08-30 12:13:16,702: 'X_winequality-red.csv' saved to 'data\transformed\X_winequality-red.csv'
+INFO: 2023-08-30 12:13:16,708: 'y_winequality-red.csv' saved to 'data\transformed\y_winequality-red.csv'
+INFO: 2023-08-30 13:00:22,074: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 13:00:22,074: Data read from data\cleansed
+INFO: 2023-08-30 13:00:22,077: Scaler saved at model_artifacts\scaler\scaler.pkl
+ERROR: 2023-08-30 13:00:22,078: Error occurred in main function: list indices must be integers or slices, not str
+INFO: 2023-08-30 13:01:34,928: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 13:01:34,928: Data read from data\cleansed
+INFO: 2023-08-30 13:01:34,931: Scaler saved at model_artifacts\scaler\scaler.pkl
+ERROR: 2023-08-30 13:01:34,943: Error occurred in main function: list indices must be integers or slices, not str
+INFO: 2023-08-30 13:06:31,358: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 13:06:31,359: Data read from data\cleansed
+INFO: 2023-08-30 13:06:31,361: Scaler saved at model_artifacts\scaler\scaler.pkl
+INFO: 2023-08-30 13:06:31,379: 'winequality-red.csv' saved to 'data\transformed\X\winequality-red.csv'
+INFO: 2023-08-30 13:06:31,382: 'winequality-red.csv' saved to 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 13:13:10,900: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 13:13:10,922: 'winequality-red.csv' loaded to 'data\raw'
+INFO: 2023-08-30 13:13:12,045: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 13:13:12,046: Cleaning data...
+INFO: 2023-08-30 13:13:12,049: Imputed missing values using SimpleImputer
+INFO: 2023-08-30 13:13:12,059: 'winequality-red.csv' loaded to 'data\cleansed'
+INFO: 2023-08-30 13:13:13,084: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 13:13:13,085: Data read from data\cleansed
+INFO: 2023-08-30 13:13:13,088: Scaler saved at model_artifacts\scaler\scaler.pkl
+INFO: 2023-08-30 13:13:13,115: 'winequality-red.csv' saved to 'data\transformed\X\winequality-red.csv'
+INFO: 2023-08-30 13:13:13,122: 'winequality-red.csv' saved to 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 13:16:29,473: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 13:16:29,473: Data read from data\cleansed
+INFO: 2023-08-30 13:16:29,475: Scaler saved at model_artifacts\scaler\scaler.pkl
+INFO: 2023-08-30 13:16:29,499: 'winequality-red.csv' saved to 'data\transformed\X\winequality-red.csv'
+INFO: 2023-08-30 13:16:29,504: 'winequality-red.csv' saved to 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 13:51:25,189: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 13:51:25,189: Data read from data\cleansed
+INFO: 2023-08-30 13:51:25,192: Scaler saved at model_artifacts\scaler\scaler.pkl
+ERROR: 2023-08-30 13:51:25,193: Error occurred during transformation: Expected 2D array, got 1D array instead:
+array=[ 9.4  9.8  9.8 ... 11.  10.2 11. ].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+WARNING: 2023-08-30 13:51:25,193: Data transformation failed
+INFO: 2023-08-30 13:52:27,777: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 13:52:27,777: Data read from data\cleansed
+INFO: 2023-08-30 13:52:27,787: Scaler saved at model_artifacts\scaler\scaler.pkl
+ERROR: 2023-08-30 13:52:27,787: Error occurred during transformation: Expected 2D array, got 1D array instead:
+array=[ 9.4  9.8  9.8 ... 11.  10.2 11. ].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+WARNING: 2023-08-30 13:52:27,788: Data transformation failed
+INFO: 2023-08-30 13:52:51,626: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 13:52:51,627: Data read from data\cleansed
+INFO: 2023-08-30 13:52:51,632: Scaler saved at model_artifacts\scaler\scaler.pkl
+ERROR: 2023-08-30 13:52:51,633: Error occurred during transformation: Expected 2D array, got 1D array instead:
+array=[ 9.4  9.8  9.8 ... 11.  10.2 11. ].
+Reshape your data either using array.reshape(-1, 1) if your data has a single feature or array.reshape(1, -1) if it contains a single sample.
+WARNING: 2023-08-30 13:52:51,633: Data transformation failed
+INFO: 2023-08-30 13:59:27,176: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 13:59:27,177: Data read from data\cleansed
+INFO: 2023-08-30 13:59:27,183: Scaler saved at model_artifacts\scaler\scaler.pkl
+INFO: 2023-08-30 13:59:27,184: Scaler saved at model_artifacts\scaler\scaler.pkl
+INFO: 2023-08-30 13:59:27,199: 'winequality-red.csv' saved to 'data\transformed\X\winequality-red.csv'
+INFO: 2023-08-30 13:59:27,205: 'winequality-red.csv' saved to 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 13:59:27,206: Data split and saved to: X -> data\transformed\X\winequality-red.csv, y -> data\transformed\y\winequality-red.csv
+INFO: 2023-08-30 14:05:56,559: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 14:05:56,560: Data read from data\cleansed
+INFO: 2023-08-30 14:05:56,563: Scaler saved at model_artifacts\scaler\X_scaler.pkl
+INFO: 2023-08-30 14:05:56,564: Scaler saved at model_artifacts\scaler\y_scaler.pkl
+INFO: 2023-08-30 14:05:56,578: 'winequality-red.csv' saved to 'data\transformed\X\winequality-red.csv'
+INFO: 2023-08-30 14:05:56,583: 'winequality-red.csv' saved to 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 14:05:56,583: Data split and saved to: X -> 'data\transformed\X\winequality-red.csv', y -> 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 14:06:27,764: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 14:06:27,784: 'winequality-red.csv' loaded to 'data\raw'
+INFO: 2023-08-30 14:06:28,807: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 14:06:28,807: Cleaning data...
+INFO: 2023-08-30 14:06:28,809: Imputed missing values using SimpleImputer
+INFO: 2023-08-30 14:06:28,820: 'winequality-red.csv' loaded to 'data\cleansed'
+INFO: 2023-08-30 14:06:29,803: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 14:06:29,804: Data read from data\cleansed
+INFO: 2023-08-30 14:06:29,808: Scaler saved at model_artifacts\scaler\X_scaler.pkl
+INFO: 2023-08-30 14:06:29,812: Scaler saved at model_artifacts\scaler\y_scaler.pkl
+INFO: 2023-08-30 14:06:29,827: 'winequality-red.csv' saved to 'data\transformed\X\winequality-red.csv'
+INFO: 2023-08-30 14:06:29,832: 'winequality-red.csv' saved to 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 14:06:29,833: Data split and saved to: X -> 'data\transformed\X\winequality-red.csv', y -> 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 14:07:00,914: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 14:07:00,914: Data read from data\cleansed
+INFO: 2023-08-30 14:07:00,918: Scaler saved at model_artifacts\scaler\X_scaler.pkl
+INFO: 2023-08-30 14:07:00,919: Scaler saved at model_artifacts\scaler\y_scaler.pkl
+ERROR: 2023-08-30 14:07:00,920: Error occurred while saving 'winequality-red.csv' to 'data\transformed\X\winequality-red.csv': Cannot save file into a non-existent directory: 'data\transformed\X'
+ERROR: 2023-08-30 14:07:00,921: Error occurred while saving 'winequality-red.csv' to 'data\transformed\y\winequality-red.csv': Cannot save file into a non-existent directory: 'data\transformed\y'
+INFO: 2023-08-30 14:07:00,921: Data split and saved to: X -> 'data\transformed\X\winequality-red.csv', y -> 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 14:11:36,081: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 14:11:36,081: Data read from data\cleansed
+INFO: 2023-08-30 14:11:36,084: Scaler saved at model_artifacts\scaler\X_scaler.pkl
+INFO: 2023-08-30 14:11:36,086: Scaler saved at model_artifacts\scaler\y_scaler.pkl
+ERROR: 2023-08-30 14:11:36,087: Error occurred while saving 'winequality-red.csv' to 'data\transformed\X\winequality-red.csv': [Errno 13] Permission denied: 'data\\transformed\\X\\winequality-red.csv'
+ERROR: 2023-08-30 14:11:36,088: Error occurred while saving 'winequality-red.csv' to 'data\transformed\y\winequality-red.csv': [Errno 13] Permission denied: 'data\\transformed\\y\\winequality-red.csv'
+INFO: 2023-08-30 14:13:27,592: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 14:13:27,593: Data read from data\cleansed
+INFO: 2023-08-30 14:13:27,596: Scaler saved at model_artifacts\scaler\X_scaler.pkl
+INFO: 2023-08-30 14:13:27,597: Scaler saved at model_artifacts\scaler\y_scaler.pkl
+INFO: 2023-08-30 14:13:27,606: 'winequality-red.csv' saved to 'data\transformed\X\winequality-red.csv'
+INFO: 2023-08-30 14:13:27,610: 'winequality-red.csv' saved to 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 14:13:27,610: Data split and saved to: X -> 'data\transformed\X\winequality-red.csv', y -> 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 14:14:50,279: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-30 14:14:50,279: Data read from data\cleansed
+INFO: 2023-08-30 14:14:50,283: Scaler saved at model_artifacts\scaler\X_scaler.pkl
+INFO: 2023-08-30 14:14:50,284: Scaler saved at model_artifacts\scaler\y_scaler.pkl
+INFO: 2023-08-30 14:14:50,294: 'winequality-red.csv' saved to 'data\transformed\X\winequality-red.csv'
+INFO: 2023-08-30 14:14:50,297: 'winequality-red.csv' saved to 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 14:14:50,298: Data split and saved to: X -> 'data\transformed\X\winequality-red.csv', y -> 'data\transformed\y\winequality-red.csv'
+INFO: 2023-08-30 14:14:51,483: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-08-30 14:14:51,485: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-08-30 14:14:51,545: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-30 14:14:51,558: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-30 14:14:51,680: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-30 14:14:51,687: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-30 14:14:51,698: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-30 14:14:51,705: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-30 14:14:51,711: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-30 14:14:51,717: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-30 14:14:51,735: DecisionTreeRegressor - RMSE: 0.66 - MAE: 0.42 - R2 Score: 0.57
+INFO: 2023-08-30 14:14:51,740: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-30 14:14:52,147: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-30 14:14:52,149: Scaler copied from 'model_artifacts\scaler\scaler.pkl' to 'prediction_app\prediction_resources\scaler\scaler.pkl'.
+INFO: 2023-08-30 15:32:20,015: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-08-30 15:32:20,018: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-08-30 15:32:20,074: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-30 15:32:20,082: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-30 15:32:20,199: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-30 15:32:20,207: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-30 15:32:20,212: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-30 15:32:20,218: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-30 15:32:20,222: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-30 15:32:20,228: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-30 15:32:20,247: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-30 15:32:20,257: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-30 15:40:58,756: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-08-30 15:40:58,758: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-08-30 15:40:58,811: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-30 15:40:58,819: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-30 15:40:58,935: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-30 15:40:58,943: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-30 15:40:58,947: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-30 15:40:58,952: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-30 15:40:58,957: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-30 15:40:58,964: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-30 15:40:58,981: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.43 - R2 Score: 0.56
+INFO: 2023-08-30 15:40:58,989: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-30 15:42:38,719: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-08-30 15:42:38,721: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-08-30 15:44:42,850: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-08-30 15:44:42,852: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-08-30 15:44:42,905: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-30 15:44:42,914: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-30 15:44:43,027: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-30 15:44:43,035: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-30 15:44:43,039: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-30 15:44:43,045: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-30 15:44:43,049: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-30 15:44:43,054: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-30 15:44:43,071: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.55
+INFO: 2023-08-30 15:44:43,078: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-30 15:44:50,635: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-08-30 15:44:50,637: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-08-30 15:44:50,689: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-30 15:44:50,696: 'SVR()' saved to 'model_artifacts\saved_models\SVR.pkl'
+INFO: 2023-08-30 15:44:50,809: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-30 15:44:50,816: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts\saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-30 15:44:50,820: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-30 15:44:50,827: 'Ridge()' saved to 'model_artifacts\saved_models\Ridge.pkl'
+INFO: 2023-08-30 15:44:50,830: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-30 15:44:50,836: 'Lasso()' saved to 'model_artifacts\saved_models\Lasso.pkl'
+INFO: 2023-08-30 15:44:50,852: DecisionTreeRegressor - RMSE: 0.68 - MAE: 0.44 - R2 Score: 0.54
+INFO: 2023-08-30 15:44:50,859: 'DecisionTreeRegressor()' saved to 'model_artifacts\saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-30 15:49:04,121: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-30 15:51:52,737: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-30 15:51:52,739: Scaler: 'scaler.pkl' copied from 'model_artifacts\scaler\scaler.pkl' -> 'prediction_app\prediction_resources\scaler\scaler.pkl'.
+INFO: 2023-08-30 15:51:52,745: Scaler: 'X_scaler.pkl' copied from 'model_artifacts\scaler\X_scaler.pkl' -> 'prediction_app\prediction_resources\scaler\X_scaler.pkl'.
+INFO: 2023-08-30 15:51:52,746: Scaler: 'y_scaler.pkl' copied from 'model_artifacts\scaler\y_scaler.pkl' -> 'prediction_app\prediction_resources\scaler\y_scaler.pkl'.
+INFO: 2023-08-30 15:52:15,627: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-30 15:52:15,628: Scaler: 'X_scaler.pkl' copied from 'model_artifacts\scaler\X_scaler.pkl' -> 'prediction_app\prediction_resources\scaler\X_scaler.pkl'.
+INFO: 2023-08-30 15:52:15,629: Scaler: 'y_scaler.pkl' copied from 'model_artifacts\scaler\y_scaler.pkl' -> 'prediction_app\prediction_resources\scaler\y_scaler.pkl'.
+INFO: 2023-08-30 15:52:20,948: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-30 15:52:20,949: Scaler: 'X_scaler.pkl' copied from 'model_artifacts\scaler\X_scaler.pkl' -> 'prediction_app\prediction_resources\scaler\X_scaler.pkl'.
+INFO: 2023-08-30 15:52:20,950: Scaler: 'y_scaler.pkl' copied from 'model_artifacts\scaler\y_scaler.pkl' -> 'prediction_app\prediction_resources\scaler\y_scaler.pkl'.
+INFO: 2023-08-30 15:53:39,253: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-30 15:53:39,254: Scaler: 'X_scaler.pkl' copied from 'model_artifacts\scaler\X_scaler.pkl' -> 'prediction_app\prediction_resources\scaler\X_scaler.pkl'.
+INFO: 2023-08-30 15:53:39,254: COPIED: X_scaler.pkl | FROM: model_artifacts\scaler\X_scaler.pkl | TO: prediction_app\prediction_resources\scaler\X_scaler.pkl
+INFO: 2023-08-30 15:53:39,255: Scaler: 'y_scaler.pkl' copied from 'model_artifacts\scaler\y_scaler.pkl' -> 'prediction_app\prediction_resources\scaler\y_scaler.pkl'.
+INFO: 2023-08-30 15:53:39,256: COPIED: y_scaler.pkl | FROM: model_artifacts\scaler\y_scaler.pkl | TO: prediction_app\prediction_resources\scaler\y_scaler.pkl
+INFO: 2023-08-30 15:55:03,294: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-30 15:55:03,296: Scaler: 'X_scaler.pkl' copied from 'model_artifacts\scaler\X_scaler.pkl' to 'prediction_app\prediction_resources\scaler\X_scaler.pkl'.
+INFO: 2023-08-30 15:55:03,297: Scaler: 'y_scaler.pkl' copied from 'model_artifacts\scaler\y_scaler.pkl' to 'prediction_app\prediction_resources\scaler\y_scaler.pkl'.
+INFO: 2023-08-30 15:55:24,107: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
+INFO: 2023-08-30 15:55:24,108: Scaler: 'X_scaler.pkl' copied from 'model_artifacts\scaler\X_scaler.pkl' to 'prediction_app\prediction_resources\scaler\X_scaler.pkl'.
+INFO: 2023-08-30 15:55:24,109: Scaler: 'y_scaler.pkl' copied from 'model_artifacts\scaler\y_scaler.pkl' to 'prediction_app\prediction_resources\scaler\y_scaler.pkl'.

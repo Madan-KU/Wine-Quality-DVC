@@ -27,7 +27,8 @@ stages:
         - src\S03_transform_data.py
         - data\cleansed\winequality-red.csv
       outs:
-        - data\transformed\winequality-red.csv
+        - data\transformed\X\winequality-red.csv
+        - data\transformed\y\winequality-red.csv
 
   model_training_and_evaluate:
     cmd: python src\S04_model_training_and_evaluate.py --config=params.yaml

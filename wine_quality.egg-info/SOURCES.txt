@@ -1,10 +1,5 @@
 setup.py
 data/__init__.py
-models/__init__.py
-models/decision_tree_regression_model.py
-models/gradient_boosting_regression_model.py
-models/ridge_regression_model.py
-models/support_vector_regression_model.py
 modules/__init__.py
 modules/data_loader.py
 modules/logger_configurator.py

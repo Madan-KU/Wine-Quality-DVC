@@ -26,11 +26,11 @@ def get_model(model_name, model_params):
     raise ValueError(f"Unknown model class: {model_name}")
 
 
-def split_data(df, config):
+def split_data(dfx,dfy):
     """Split the dataframe into train and test sets."""
     target = config['base']['target_col']
-    X = df.drop(columns=target)
-    y = df[target]
+    X = dfx
+    y = dfy
     return train_test_split(
         X, y,
         test_size=config['split_data']['test_size'],
@@ -41,6 +41,11 @@ def split_data(df, config):
 def train_and_evaluate(X_train, X_test, y_train, y_test, model_name, model_params):
     """Train the model and evaluate its performance."""
     model = get_model(model_name, model_params)
+
+     # Reshape y_train and y_test to 1D arrays
+    y_train = y_train.squeeze()
+    y_test = y_test.squeeze()
+
     model.fit(X_train, y_train)
     y_pred = model.predict(X_test)
     rmse = np.sqrt(mean_squared_error(y_test, y_pred))
@@ -71,8 +76,11 @@ def main():
     config = read_config('params.yaml')
     saved_model_directory = config['saved_model_dir']
 
-    df, filename = read_data(config['data']['transformed'])
-    X_train, X_test, y_train, y_test = split_data(df, config)
+    # df, filename = read_data(config['data']['transformed'])
+    dfx, filename = read_data(config['data']['transformed']['X'])
+    dfy, filename = read_data(config['data']['transformed']['y'])
+
+    X_train, X_test, y_train, y_test = split_data(dfx,dfy)
 
     for model_name, model_config in config['model'].items():
         model_params = model_config.get('params', {})

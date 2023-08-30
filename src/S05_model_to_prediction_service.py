@@ -31,21 +31,23 @@ def copy_best_model_to_prediction(report_metrics,saved_models_dir,serving_model_
     logging.info(f"Copied '{best_model}' model to '{serving_model_path}'")
 
 
-def copy_scaler_to_prediction(scaler_dir,serving_scaler_dir):
-    """Copy scaler files into serving folder."""
-
+def copy_scaler_to_prediction(scaler_dir, serving_scaler_dir):
+    """Copy all scaler files ending with 'scaler.pkl' into serving folder."""
+    
     if not os.path.exists(serving_scaler_dir):
-        os.makedirs(serving_scaler_dir,exist_ok=True)
+        os.makedirs(serving_scaler_dir, exist_ok=True)
     
-    source_scaler_file_path = os.path.join(scaler_dir, "scaler.pkl")
-    destination_scaler_file_path = os.path.join(serving_scaler_dir, "scaler.pkl")
+    # Iterate over all files in the source directory
+    for file in os.listdir(scaler_dir):
+        if file.endswith("scaler.pkl"):
+            source_scaler_file_path = os.path.join(scaler_dir, file)
+            destination_scaler_file_path = os.path.join(serving_scaler_dir, file)
 
-    # Copy the scaler file to the serving directory
-    shutil.copy(source_scaler_file_path, destination_scaler_file_path)
-    
-    # Log the action
-    logging.info(f"Scaler copied from '{source_scaler_file_path}' to '{destination_scaler_file_path}'.")
-
+            # Copy the scaler file to the serving directory
+            shutil.copy(source_scaler_file_path, destination_scaler_file_path)
+            
+            # Log the action
+            logging.info(f"Scaler: '{file}' copied from '{source_scaler_file_path}' to '{destination_scaler_file_path}'.")
 
 
 def main():
