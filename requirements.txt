@@ -6,6 +6,6 @@ scikit-learn
 pytest
 tox
 flask
-guincorn
+gunicorn
 redis
 -e .
