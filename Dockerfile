@@ -10,8 +10,16 @@ COPY . /app
 # Install the required packages
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Specify the command to run on container start
-CMD ["gunicorn", "application:application", "--bind", "0.0.0.0:8000"]
+# For Local
+# # Specify the command to run on container start
+# CMD ["gunicorn", "application:application", "--bind", "0.0.0.0:8000"]
+
+
+# EXPOSE 5000
+EXPOSE $PORT
+
+#For Heroku
+CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT application:application
 
 
 # docker build -t wine-quality-prediction .
