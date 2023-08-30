@@ -89,7 +89,7 @@ stages:
       size: 513
     - path: params.yaml
       hash: md5
-      md5: 195b2b2bfb34d90fdcb5b8db7c21b068
+      md5: 9d96f6b503782e96f236126359032700
       size: 2100
     - path: src\S04_model_training_and_evaluate.py
       hash: md5
@@ -106,12 +106,12 @@ stages:
     outs:
     - path: model_artifacts\saved_models
       hash: md5
-      md5: 00623700ccaa98b9d5b151931ada5b52.dir
-      size: 290800
+      md5: 0db19d12c799792279ef32b8bcdc2b98.dir
+      size: 291232
       nfiles: 5
     - path: report\metrics.json
       hash: md5
-      md5: 4e126b163c38cd57b08a48a0d338d8f4
+      md5: 7ae0615390f116429fb2d039cb90063f
       size: 920
     - path: report\params.json
       hash: md5
@@ -130,7 +130,7 @@ stages:
       size: 182
     - path: params.yaml
       hash: md5
-      md5: 195b2b2bfb34d90fdcb5b8db7c21b068
+      md5: 9d96f6b503782e96f236126359032700
       size: 2100
     - path: src\S05_model_to_prediction_service.py
       hash: md5
@@ -144,6 +144,6 @@ stages:
       nfiles: 2
     - path: prediction_app\prediction_resources\serving_models\
       hash: md5
-      md5: c9cdae1f8104516328e1dce7b93f39bf.dir
+      md5: c52478a895c7d6d51257af485d8a5a69.dir
       size: 69677
       nfiles: 1

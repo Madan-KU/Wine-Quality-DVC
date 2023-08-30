@@ -1,7 +1,7 @@
 import os
 import yaml
 import pickle
-import prediction_app_config as app_config
+
 
 
 def read_yaml_config(file_path):

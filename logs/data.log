@@ -396,3 +396,24 @@ INFO: 2023-08-30 15:55:03,297: Scaler: 'y_scaler.pkl' copied from 'model_artifac
 INFO: 2023-08-30 15:55:24,107: Copied 'GradientBoostingRegressor' model to 'prediction_app\prediction_resources\serving_models\model.pkl'
 INFO: 2023-08-30 15:55:24,108: Scaler: 'X_scaler.pkl' copied from 'model_artifacts\scaler\X_scaler.pkl' to 'prediction_app\prediction_resources\scaler\X_scaler.pkl'.
 INFO: 2023-08-30 15:55:24,109: Scaler: 'y_scaler.pkl' copied from 'model_artifacts\scaler\y_scaler.pkl' to 'prediction_app\prediction_resources\scaler\y_scaler.pkl'.
+INFO: 2023-08-31 00:30:51,505: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-08-31 00:30:51,506: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-08-31 00:30:51,558: SVR - RMSE: 0.91 - MAE: 0.69 - R2 Score: 0.17
+INFO: 2023-08-31 00:30:51,566: 'SVR()' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-08-31 00:30:51,682: GradientBoostingRegressor - RMSE: 0.53 - MAE: 0.41 - R2 Score: 0.72
+INFO: 2023-08-31 00:30:51,689: 'GradientBoostingRegressor(n_estimators=50)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-08-31 00:30:51,692: Ridge - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-08-31 00:30:51,699: 'Ridge()' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-08-31 00:30:51,702: Lasso - RMSE: 1.00 - MAE: 0.82 - R2 Score: 0.01
+INFO: 2023-08-31 00:30:51,709: 'Lasso()' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-08-31 00:30:51,726: DecisionTreeRegressor - RMSE: 0.67 - MAE: 0.44 - R2 Score: 0.56
+INFO: 2023-08-31 00:30:51,733: 'DecisionTreeRegressor()' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-08-31 00:30:52,118: Copied 'GradientBoostingRegressor' model to 'prediction_app/prediction_resources/serving_models\model.pkl'
+INFO: 2023-08-31 00:30:52,119: Scaler: 'X_scaler.pkl' copied from 'model_artifacts/scaler\X_scaler.pkl' to 'prediction_app/prediction_resources/scaler\X_scaler.pkl'.
+INFO: 2023-08-31 00:30:52,120: Scaler: 'y_scaler.pkl' copied from 'model_artifacts/scaler\y_scaler.pkl' to 'prediction_app/prediction_resources/scaler\y_scaler.pkl'.
+INFO: 2023-08-31 00:32:16,516: Copied 'GradientBoostingRegressor' model to 'prediction_app/prediction_resources/serving_models\model.pkl'
+INFO: 2023-08-31 00:32:16,517: Scaler: 'X_scaler.pkl' copied from 'model_artifacts/scaler\X_scaler.pkl' to 'prediction_app/prediction_resources/scaler\X_scaler.pkl'.
+INFO: 2023-08-31 00:32:16,518: Scaler: 'y_scaler.pkl' copied from 'model_artifacts/scaler\y_scaler.pkl' to 'prediction_app/prediction_resources/scaler\y_scaler.pkl'.
+INFO: 2023-08-31 00:33:06,440: Copied 'GradientBoostingRegressor' model to 'prediction_app/prediction_resources/serving_models\model.pkl'
+INFO: 2023-08-31 00:33:06,442: Scaler: 'X_scaler.pkl' copied from 'model_artifacts/scaler\X_scaler.pkl' to 'prediction_app/prediction_resources/scaler\X_scaler.pkl'.
+INFO: 2023-08-31 00:33:06,442: Scaler: 'y_scaler.pkl' copied from 'model_artifacts/scaler\y_scaler.pkl' to 'prediction_app/prediction_resources/scaler\y_scaler.pkl'.

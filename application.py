@@ -5,16 +5,22 @@ import joblib
 import numpy as np
 import pandas as pd
 
-import prediction_app_config as config
-import prediction as pred
+import prediction_app.prediction as pred
 
 from flask import Flask, request, render_template, send_from_directory, redirect, url_for,jsonify
 
+static_folder_path =  os.path.join("prediction_app","static")
+template_folder_path= os.path.join("prediction_app","templates")
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 0
+
+
 # Flask application setup
-application = Flask(__name__, static_folder=config.path.static_path, template_folder=config.path.template_path)
+application = Flask(__name__, static_folder=static_folder_path , template_folder=template_folder_path)
 
 # Connect to Redis AOF
-# r = redis.StrictRedis(host=config.redis.REDIS_HOST, port=config.redis.REDIS_PORT, db=config.redis.REDIS_DB, decode_responses=True)
+# r = redis.StrictRedis(host=REDIS_HOST, port=REDIS_PORT, db=REDIS_DB, decode_responses=True)
 
 @application.route('/',methods= ["GET","POST"])
 def home():
