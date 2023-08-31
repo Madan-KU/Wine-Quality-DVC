@@ -17,19 +17,19 @@ stages:
       size: 513
     - path: src\S01_load_data.py
       hash: md5
-      md5: 712f9a9e6b8fd8bd9a2631128475fd68
-      size: 648
+      md5: 8074dfd63e43ba8ff425af81efa21439
+      size: 699
     outs:
     - path: data\raw\winequality-red.csv
       hash: md5
-      md5: 2d2440983194f97ea8ea940257054caf
+      md5: 919e9477c64f61c85f5c54628774b327
       size: 95085
   clean_data:
     cmd: python src\S02_clean_data.py
     deps:
     - path: data\raw\winequality-red.csv
       hash: md5
-      md5: 2d2440983194f97ea8ea940257054caf
+      md5: 919e9477c64f61c85f5c54628774b327
       size: 95085
     - path: modules\data_loader.py
       hash: md5
@@ -46,14 +46,14 @@ stages:
     outs:
     - path: data\cleansed\winequality-red.csv
       hash: md5
-      md5: bc4ca3daf1548cd1b1fca2ed06e2eb62
+      md5: cd1722c2bc71d34217daf5764c84afe5
       size: 98283
   transform_data:
     cmd: python src\S03_transform_data.py
     deps:
     - path: data\cleansed\winequality-red.csv
       hash: md5
-      md5: bc4ca3daf1548cd1b1fca2ed06e2eb62
+      md5: cd1722c2bc71d34217daf5764c84afe5
       size: 98283
     - path: modules\data_loader.py
       hash: md5
@@ -70,7 +70,7 @@ stages:
     outs:
     - path: data\transformed\X\winequality-red.csv
       hash: md5
-      md5: 6e30e2164f8c9dbc73657e03ef6c9002
+      md5: 412f6302f2c901cb344b808ffdbe3755
       size: 90873
     - path: data\transformed\y\winequality-red.csv
       hash: md5

@@ -13,6 +13,7 @@ def main():
     configure_logger()
     
     df,filename = read_data(config['data']['remote'])
+    df.columns = df.columns.str.replace(' ', '_')
     # filename='raw_'+ filename
 
     if df is not None:

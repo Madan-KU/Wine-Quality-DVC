@@ -14,14 +14,16 @@ RUN pip install --no-cache-dir -r requirements.txt
 # # Specify the command to run on container start
 # CMD ["gunicorn", "application:application", "--bind", "0.0.0.0:8000"]
 
+# For Local
+EXPOSE 5000 
 
-# EXPOSE 5000
-EXPOSE $PORT
+# For Heroku
+# EXPOSE $PORT 
 
-#For Heroku
+# For Heroku
 CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT application:application
 
 
 # docker build -t wine-quality-prediction .
-# docker run -p 8000:8000 wine-quality-prediction
+# docker run -e PORT=5000 -p 8000:5000 wine-quality-prediction
 # http://localhost:8000/

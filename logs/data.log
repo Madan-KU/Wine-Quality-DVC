@@ -417,3 +417,41 @@ INFO: 2023-08-31 00:32:16,518: Scaler: 'y_scaler.pkl' copied from 'model_artifac
 INFO: 2023-08-31 00:33:06,440: Copied 'GradientBoostingRegressor' model to 'prediction_app/prediction_resources/serving_models\model.pkl'
 INFO: 2023-08-31 00:33:06,442: Scaler: 'X_scaler.pkl' copied from 'model_artifacts/scaler\X_scaler.pkl' to 'prediction_app/prediction_resources/scaler\X_scaler.pkl'.
 INFO: 2023-08-31 00:33:06,442: Scaler: 'y_scaler.pkl' copied from 'model_artifacts/scaler\y_scaler.pkl' to 'prediction_app/prediction_resources/scaler\y_scaler.pkl'.
+INFO: 2023-08-31 13:55:52,262: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-31 13:55:52,276: Schema written to 'schema/input_schema.json'
+INFO: 2023-08-31 13:56:02,764: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-31 13:56:02,774: Schema written to 'schema/input_schema.json'
+INFO: 2023-08-31 13:56:17,028: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-31 13:56:17,038: Schema written to 'schema/input_schema.json'
+INFO: 2023-08-31 14:53:33,287: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-31 14:53:33,311: 'winequality-red.csv' loaded to 'data/raw'
+INFO: 2023-08-31 14:53:34,981: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-31 14:53:34,982: Cleaning data...
+INFO: 2023-08-31 14:53:34,989: Imputed missing values using SimpleImputer
+INFO: 2023-08-31 14:53:35,002: 'winequality-red.csv' loaded to 'data/cleansed'
+INFO: 2023-08-31 14:53:36,037: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-31 14:53:36,038: Data read from data/cleansed
+INFO: 2023-08-31 14:53:36,044: Scaler saved at model_artifacts/scaler\X_scaler.pkl
+INFO: 2023-08-31 14:53:36,045: Scaler saved at model_artifacts/scaler\y_scaler.pkl
+INFO: 2023-08-31 14:53:36,054: 'winequality-red.csv' saved to 'data/transformed/X\winequality-red.csv'
+INFO: 2023-08-31 14:53:36,058: 'winequality-red.csv' saved to 'data/transformed/y\winequality-red.csv'
+INFO: 2023-08-31 14:53:36,058: Data split and saved to: X -> 'data/transformed/X\winequality-red.csv', y -> 'data/transformed/y\winequality-red.csv'
+INFO: 2023-08-31 14:53:54,715: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-31 14:53:54,730: Schema written to 'schema/input_schema.json'
+ERROR: 2023-08-31 15:07:20,164: Unable to write input schema. Error: 'target_col'
+INFO: 2023-08-31 15:12:51,222: Successfully read winequality-red.csv, shape (1599, 12)
+ERROR: 2023-08-31 15:12:51,232: Unable to write input schema. Error: 'columns'
+INFO: 2023-08-31 15:13:22,199: Successfully read winequality-red.csv, shape (1599, 12)
+ERROR: 2023-08-31 15:13:22,210: Unable to write input schema. Error: 'columns'
+INFO: 2023-08-31 15:13:31,661: Successfully read winequality-red.csv, shape (1599, 12)
+ERROR: 2023-08-31 15:13:31,671: Unable to write input schema. Error: 'columns'
+INFO: 2023-08-31 15:13:54,520: Successfully read winequality-red.csv, shape (1599, 12)
+ERROR: 2023-08-31 15:13:54,530: Unable to write input schema. Error: 'columns'
+INFO: 2023-08-31 15:14:31,933: Successfully read winequality-red.csv, shape (1599, 12)
+ERROR: 2023-08-31 15:14:31,943: Unable to write input schema. Error: 'columns'
+INFO: 2023-08-31 15:15:47,749: Successfully read winequality-red.csv, shape (1599, 12)
+ERROR: 2023-08-31 15:15:47,760: Unable to write input schema. Error: 'columns'
+INFO: 2023-08-31 15:15:59,568: Successfully read winequality-red.csv, shape (1599, 12)
+ERROR: 2023-08-31 15:15:59,578: Unable to write input schema. Error: 'columns'
+INFO: 2023-08-31 15:16:47,666: Successfully read winequality-red.csv, shape (1599, 12)
+INFO: 2023-08-31 15:16:47,675: Schema written to 'schema/input_schema.json'
