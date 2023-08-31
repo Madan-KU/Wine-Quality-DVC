@@ -68,4 +68,7 @@ stages:
 
 
 
-  
+  # logging_production_model:
+  # cmd: python src/S06_logging_production_model.py --config=params.yaml
+  # deps:
+  #  - src/S06_logging_production_model.py

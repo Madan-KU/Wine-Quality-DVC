@@ -89,34 +89,34 @@ stages:
       size: 513
     - path: params.yaml
       hash: md5
-      md5: 9d96f6b503782e96f236126359032700
-      size: 2100
+      md5: 24eb12ac17ad9d439580c15be15895c0
+      size: 2223
     - path: src\S04_model_training_and_evaluate.py
       hash: md5
-      md5: 6d4d457a2228969ca00fbfa60fc16d85
-      size: 3144
+      md5: a8e40739394afd91f5051b1543be6c8a
+      size: 4200
     params:
       params.yaml:
-        model.GradientBoostingRegressor.params.learning_rate: 0.1
-        model.GradientBoostingRegressor.params.n_estimators: 50
-        model.Lasso.params.alpha: 1.0
-        model.Ridge.params.alpha: 1.0
-        model.SVR.params.C: 1.0
-        model.SVR.params.kernel: rbf
+        model.GradientBoostingRegressor.params.learning_rate: 0.10266028663543998
+        model.GradientBoostingRegressor.params.n_estimators: 138
+        model.Lasso.params.alpha: 1.0011914202984054e-05
+        model.Ridge.params.alpha: 3.285282856832876e-05
+        model.SVR.params.C: 0.99923613802881
+        model.SVR.params.kernel: linear
     outs:
     - path: model_artifacts\saved_models
       hash: md5
-      md5: 0db19d12c799792279ef32b8bcdc2b98.dir
-      size: 291232
+      md5: 80f98672db376cca89f09abb33762ff8.dir
+      size: 287135
       nfiles: 5
     - path: report\metrics.json
       hash: md5
-      md5: 7ae0615390f116429fb2d039cb90063f
-      size: 920
+      md5: 2514421d6053ce6b231998ca195621c1
+      size: 919
     - path: report\params.json
       hash: md5
-      md5: 70765cff5638e1ca0d9409ac78985e6f
-      size: 523
+      md5: acfe32aa87f7cc5c7bcae72898cde6ee
+      size: 808
   model_to_prediction_service:
     cmd: python  src\S05_model_to_prediction_service.py
     deps:
@@ -130,8 +130,8 @@ stages:
       size: 182
     - path: params.yaml
       hash: md5
-      md5: 9d96f6b503782e96f236126359032700
-      size: 2100
+      md5: 24eb12ac17ad9d439580c15be15895c0
+      size: 2223
     - path: src\S05_model_to_prediction_service.py
       hash: md5
       md5: bbede33f0a56d769bc2e9f0f54a007fb
@@ -139,11 +139,11 @@ stages:
     outs:
     - path: prediction_app\prediction_resources\scaler
       hash: md5
-      md5: c6a8ed63244e7d482e64466167a0adcb.dir
+      md5: c33d0afdf117df9f78b87e48c6bdd9bc.dir
       size: 1433
       nfiles: 2
     - path: prediction_app\prediction_resources\serving_models\
       hash: md5
-      md5: c52478a895c7d6d51257af485d8a5a69.dir
-      size: 69677
+      md5: cefc7b79a1cb438553fe3d209bf95845.dir
+      size: 175526
       nfiles: 1

@@ -1,27 +1,34 @@
 {
-    "SVR": {
+    "DecisionTreeRegressor": {
         "hyperparameters": {
-            "kernel": "rbf",
-            "C": 1.0
+            "max_depth": 7,
+            "min_samples_leaf": 16,
+            "min_samples_split": 5
         }
     },
     "GradientBoostingRegressor": {
         "hyperparameters": {
-            "n_estimators": 50,
-            "learning_rate": 0.1
-        }
-    },
-    "Ridge": {
-        "hyperparameters": {
-            "alpha": 1.0
+            "learning_rate": 0.10266028663543998,
+            "max_depth": 3,
+            "min_samples_leaf": 7,
+            "min_samples_split": 14,
+            "n_estimators": 138
         }
     },
     "Lasso": {
         "hyperparameters": {
-            "alpha": 1.0
+            "alpha": 1.0011914202984054e-05
         }
     },
-    "DecisionTreeRegressor": {
-        "hyperparameters": {}
+    "Ridge": {
+        "hyperparameters": {
+            "alpha": 3.285282856832876e-05
+        }
+    },
+    "SVR": {
+        "hyperparameters": {
+            "C": 0.99923613802881,
+            "kernel": "linear"
+        }
     }
 }

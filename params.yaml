@@ -1,83 +1,73 @@
-# Base Configuration
 base:
   project: winealcohol-project
   random_state: 50
   target_col: alcohol
-
-# Logging Configuration
-logging:
-  level: INFO
-  format: '%(levelname)s: %(asctime)s: %(message)s'
-  log_file: 'logs/data.log'
-
-# Data Paths
 data:
-  raw: 'data/raw'
-  remote: 'data/remote'
-  cleansed: 'data/cleansed'
+  cleansed: data/cleansed
+  raw: data/raw
+  remote: data/remote
   transformed:
-    X: 'data/transformed/X'
-    y: 'data/transformed/y'
-  
-# Data Source Configuration
+    X: data/transformed/X
+    y: data/transformed/y
 data_source:
   remote_source: remote/winequality-red.csv
-
-# Schema Configuration
-schema:
-  input: schema/input_schema.json
-
-# Data Split Configuration
-split_data:
-  train_path: data/processed/train_wine_quality.csv
-  test_path: data/processed/test_wine_quality.csv
-  test_size: 0.3
-
-# Model Configuration
+logging:
+  format: '%(levelname)s: %(asctime)s: %(message)s'
+  level: INFO
+  log_file: logs/data.log
+mlflow_configuration:
+  artifacts_dir: artifacts
+  experiment_name: new_regression
+  registered_model_name: GradientBoostingWineModel
+  remote_server_uri: http://127.0.0.1:1234
+  run_name: mlops
 model:
-  SVR:
-    name: SupportVectorRegression
-    class: 'models.support_vector_regression_model.train_support_vector_regression_model'
-    params:
-      kernel: 'rbf'
-      C: 1.0
-
-  GradientBoostingRegressor:
-    name: GradientBoostingRegression
-    class: 'models.gradient_boosting_regression_model.train_gradient_boosting_regression_model'
-    params:
-      n_estimators: 50
-      learning_rate: 0.1
-
-  Ridge:
-    name: RidgeRegression
-    class: 'models.ridge_regression_model.train_ridge_regression_model'
-    params:
-      alpha: 1.0
-
-  Lasso:
-    name: LassoRegression
-    class: 'models.lasso_regression_model.train_lasso_regression_model'
-    params:
-      alpha: 1.0
-
   DecisionTreeRegressor:
+    class: models.decision_tree_regression_model.train_decision_tree_regression_model
     name: DecisionTreeRegressor
-    class: 'models.decision_tree_regression_model.train_decision_tree_regression_model'
-
-# Saved Model and Scaler Directories
-saved_model_dir: model_artifacts/saved_models 
-scaler_dir: model_artifacts/scaler
-
-# Reports Configuration
+    params:
+      max_depth: 7
+      min_samples_leaf: 16
+      min_samples_split: 5
+  GradientBoostingRegressor:
+    class: models.gradient_boosting_regression_model.train_gradient_boosting_regression_model
+    name: GradientBoostingRegression
+    params:
+      learning_rate: 0.10266028663543998
+      max_depth: 3
+      min_samples_leaf: 7
+      min_samples_split: 14
+      n_estimators: 138
+  Lasso:
+    class: models.lasso_regression_model.train_lasso_regression_model
+    name: LassoRegression
+    params:
+      alpha: 1.0011914202984054e-05
+  Ridge:
+    class: models.ridge_regression_model.train_ridge_regression_model
+    name: RidgeRegression
+    params:
+      alpha: 3.285282856832876e-05
+  SVR:
+    class: models.support_vector_regression_model.train_support_vector_regression_model
+    name: SupportVectorRegression
+    params:
+      C: 0.99923613802881
+      kernel: linear
+prediction_app:
+  model: prediction_app/prediction_resources/serving_models
+  root_dir: prediction_app
+  scaler: prediction_app/prediction_resources/scaler
 reports:
-  reports: report
-  params: report/params.json
   metrics: report/metrics.json
   metrics_history: report/metrics_history.json
-
-# Prediction App Configuration
-prediction_app:
-  root_dir: prediction_app
-  model: prediction_app/prediction_resources/serving_models
-  scaler: prediction_app/prediction_resources/scaler
+  params: report/params.json
+  reports: report
+saved_model_dir: model_artifacts/saved_models
+scaler_dir: model_artifacts/scaler
+schema:
+  input: schema/input_schema.json
+split_data:
+  test_path: data/processed/test_wine_quality.csv
+  test_size: 0.3
+  train_path: data/processed/train_wine_quality.csv
