@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block title %}
+WineQuality
+{% endblock title %}
+
+{% block custom_css %}
+<style>
+.input-box {
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px 10px;
+    background-color: #f2f2f2; 
+    color: black;
+}
+
+.input-box textarea {
+    border: 1px solid #5d24fa; 
+    color: black;
+    margin-bottom: 10px;
+    /* width: 300px;
+    height: 50px; */
+}
+
+.input-box textarea:focus {
+    outline: none;
+    border-color: #8a2be2; 
+    box-shadow: 0 0 10px #3e1fec; 
+}
+
+.prediction-output-box {
+    border: 2px solid #704fff;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f2f2f2; 
+}
+</style>
+{% endblock custom_css %}
+
+{% block body %}
+
+<!-- Navbar with Background Color -->
+<nav class="navbar navbar-expand-lg bg-dark mt-3">
+  <!-- Navbar Content -->
+</nav>
+
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light shadow fixed-top" style="background-color: #b6e1ff;">
+    <a class="navbar-brand" href="/">Wine Alcohol Content Prediction</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+<div class="container-fluid masthead mt-5">
+<div class="container">
+    <div class="row">
+        <!-- Enter Input Box -->
+        <div class="col-md-4">
+            <h4 class="mb-2">Enter Input:</h4>
+            <form method="POST">
+                <div class="form-group">
+                    <div class="input-box">
+                        <textarea class="form-control" name="fixed_acidity" rows="2"
+                        placeholder="fixed acidity expected range 4.6 to 15.9"></textarea>
+                        <textarea class="form-control" name="volatile_acidity" rows="2"
+                        placeholder="volatile acidity expected range 0.12 to 1.58"></textarea>
+                        <textarea class="form-control" name="citric_acid" rows="2"
+                        placeholder="citric acid expected range 0.0 to 1.0"></textarea>
+                        <textarea class="form-control" name="residual_sugar" rows="2"
+                        placeholder="residual sugar expected range 0.9 to 15.5"></textarea>
+                        <textarea class="form-control" name="chlorides" rows="2"
+                        placeholder="chlorides expected range 0.012 to 0.611"></textarea>
+                        <textarea class="form-control" name="free_sulfur_dioxide" rows="2"
+                        placeholder="free sulfur dioxide expected range 1.0 to 72.0"></textarea>
+                        <textarea class="form-control" name="total_sulfur_dioxide" rows="2"
+                        placeholder="total sulfur dioxide expected range 6.0 to 289.0"></textarea>
+                        <textarea class="form-control" name="density" rows="2"
+                        placeholder="density expected range 0.99007 to 1.00369"></textarea>
+                        <textarea class="form-control" name="pH" rows="2"
+                        placeholder="pH expected range 2.74 to 4.01"></textarea>
+                        <textarea class="form-control" name="sulphates" rows="2"
+                        placeholder="sulphates expected range 0.33 to 2.0"></textarea>
+                        <textarea class="form-control" name="quality" rows="2"
+                        placeholder="quality expected range 3 to 8"></textarea>
+                        <button type="submit" class="btn btn-primary mb-2">Predict</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <!-- JSON Input Box -->
+        <div class="col-md-4">
+            <h4>Alternative: Input as JSON</h4>
+            <div class="input-box">
+                <textarea id="json-input" class="form-control" rows="15">
+{
+    "fixed_acidity": 8.5,
+    "volatile_acidity": 0.28,
+    "citric_acid": 0.56,
+    "residual_sugar": 1.8,
+    "chlorides": 0.092,
+    "free_sulfur_dioxide": 35.0,
+    "total_sulfur_dioxide": 103.0,
+    "density": 0.9969,
+    "pH": 3.3,
+    "sulphates": 0.75,
+    "quality": 7
+}
+                </textarea>
+                <button id="json-predict-btn" type="button" class="btn btn-secondary mt-2">Predict with JSON</button>
+            </div>
+        </div>
+        <!-- Prediction Box -->
+        <div class="col-md-4">
+            <h4 class="mb-2">Prediction:</h4>
+            <div class="input-box">
+                <textarea readonly class="form-control" id="exTextarea" rows="2">{{ prediction }}</textarea>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script>
+document.getElementById("json-predict-btn").addEventListener("click", function() {
+const jsonData = document.getElementById("json-input").value;
+
+fetch("/", {
+method: "POST",
+headers: {
+"Content-Type": "application/json"
+},
+body: jsonData
+})
+.then(response => response.json())
+.then(data => {
+// Update the prediction textarea with the result
+document.getElementById("exTextarea").value = data.prediction;
+})
+.catch(error => {
+console.error("Error:", error);
+});
+});
+</script>
+
+{% endblock body %}
+{% block custom_js %}
+<!-- Custom JS -->
+<script src="{{ url_for('static', filename='script/index.js') }}"></script>
+{% endblock custom_js %}

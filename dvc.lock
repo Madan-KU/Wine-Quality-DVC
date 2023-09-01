@@ -1,0 +1,149 @@
+schema: '2.0'
+stages:
+  load_data:
+    cmd: python src\S01_load_data.py
+    deps:
+    - path: data\remote\winequality-red.csv
+      hash: md5
+      md5: 6a883fd98624e18c0b7ce251f4fab4fb
+      size: 100951
+    - path: modules\data_loader.py
+      hash: md5
+      md5: 88ac80c43f76670f2bab6f93350ee195
+      size: 747
+    - path: modules\logger_configurator.py
+      hash: md5
+      md5: e286601c2c429c503afaff8df14eefd6
+      size: 513
+    - path: src\S01_load_data.py
+      hash: md5
+      md5: 8074dfd63e43ba8ff425af81efa21439
+      size: 699
+    outs:
+    - path: data\raw\winequality-red.csv
+      hash: md5
+      md5: 919e9477c64f61c85f5c54628774b327
+      size: 95085
+  clean_data:
+    cmd: python src\S02_clean_data.py
+    deps:
+    - path: data\raw\winequality-red.csv
+      hash: md5
+      md5: 919e9477c64f61c85f5c54628774b327
+      size: 95085
+    - path: modules\data_loader.py
+      hash: md5
+      md5: 88ac80c43f76670f2bab6f93350ee195
+      size: 747
+    - path: modules\logger_configurator.py
+      hash: md5
+      md5: e286601c2c429c503afaff8df14eefd6
+      size: 513
+    - path: src\S02_clean_data.py
+      hash: md5
+      md5: 2d292f73ca3df54a16120e5cb59b3186
+      size: 1158
+    outs:
+    - path: data\cleansed\winequality-red.csv
+      hash: md5
+      md5: cd1722c2bc71d34217daf5764c84afe5
+      size: 98283
+  transform_data:
+    cmd: python src\S03_transform_data.py
+    deps:
+    - path: data\cleansed\winequality-red.csv
+      hash: md5
+      md5: cd1722c2bc71d34217daf5764c84afe5
+      size: 98283
+    - path: modules\data_loader.py
+      hash: md5
+      md5: 88ac80c43f76670f2bab6f93350ee195
+      size: 747
+    - path: modules\logger_configurator.py
+      hash: md5
+      md5: e286601c2c429c503afaff8df14eefd6
+      size: 513
+    - path: src\S03_transform_data.py
+      hash: md5
+      md5: 4dfa818a3097a6e4bc27f16578a2bf95
+      size: 3881
+    outs:
+    - path: data\transformed\X\winequality-red.csv
+      hash: md5
+      md5: 412f6302f2c901cb344b808ffdbe3755
+      size: 90873
+    - path: data\transformed\y\winequality-red.csv
+      hash: md5
+      md5: f99ab6519c78d9e17dca9640630c8f22
+      size: 9010
+  model_training_and_evaluate:
+    cmd: python src\S04_model_training_and_evaluate.py --config=params.yaml
+    deps:
+    - path: modules\data_loader.py
+      hash: md5
+      md5: 88ac80c43f76670f2bab6f93350ee195
+      size: 747
+    - path: modules\logger_configurator.py
+      hash: md5
+      md5: e286601c2c429c503afaff8df14eefd6
+      size: 513
+    - path: params.yaml
+      hash: md5
+      md5: 9d96f6b503782e96f236126359032700
+      size: 2100
+    - path: src\S04_model_training_and_evaluate.py
+      hash: md5
+      md5: 6d4d457a2228969ca00fbfa60fc16d85
+      size: 3144
+    params:
+      params.yaml:
+        model.GradientBoostingRegressor.params.learning_rate: 0.1
+        model.GradientBoostingRegressor.params.n_estimators: 50
+        model.Lasso.params.alpha: 1.0
+        model.Ridge.params.alpha: 1.0
+        model.SVR.params.C: 1.0
+        model.SVR.params.kernel: rbf
+    outs:
+    - path: model_artifacts\saved_models
+      hash: md5
+      md5: 0db19d12c799792279ef32b8bcdc2b98.dir
+      size: 291232
+      nfiles: 5
+    - path: report\metrics.json
+      hash: md5
+      md5: 7ae0615390f116429fb2d039cb90063f
+      size: 920
+    - path: report\params.json
+      hash: md5
+      md5: 70765cff5638e1ca0d9409ac78985e6f
+      size: 523
+  model_to_prediction_service:
+    cmd: python  src\S05_model_to_prediction_service.py
+    deps:
+    - path: modules\logger_configurator.py
+      hash: md5
+      md5: e286601c2c429c503afaff8df14eefd6
+      size: 513
+    - path: modules\read_config.py
+      hash: md5
+      md5: 51609abfd1a81335e6409ee2dac3a8fd
+      size: 182
+    - path: params.yaml
+      hash: md5
+      md5: 9d96f6b503782e96f236126359032700
+      size: 2100
+    - path: src\S05_model_to_prediction_service.py
+      hash: md5
+      md5: bbede33f0a56d769bc2e9f0f54a007fb
+      size: 2536
+    outs:
+    - path: prediction_app\prediction_resources\scaler
+      hash: md5
+      md5: c6a8ed63244e7d482e64466167a0adcb.dir
+      size: 1433
+      nfiles: 2
+    - path: prediction_app\prediction_resources\serving_models\
+      hash: md5
+      md5: c52478a895c7d6d51257af485d8a5a69.dir
+      size: 69677
+      nfiles: 1

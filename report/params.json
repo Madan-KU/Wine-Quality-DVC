@@ -1,0 +1,27 @@
+{
+    "SVR": {
+        "hyperparameters": {
+            "kernel": "rbf",
+            "C": 1.0
+        }
+    },
+    "GradientBoostingRegressor": {
+        "hyperparameters": {
+            "n_estimators": 50,
+            "learning_rate": 0.1
+        }
+    },
+    "Ridge": {
+        "hyperparameters": {
+            "alpha": 1.0
+        }
+    },
+    "Lasso": {
+        "hyperparameters": {
+            "alpha": 1.0
+        }
+    },
+    "DecisionTreeRegressor": {
+        "hyperparameters": {}
+    }
+}
