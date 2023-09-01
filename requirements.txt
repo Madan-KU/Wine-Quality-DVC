@@ -8,4 +8,7 @@ tox
 flask
 gunicorn
 redis
+mlflow
+optuna
+optuna-dashboard
 -e .

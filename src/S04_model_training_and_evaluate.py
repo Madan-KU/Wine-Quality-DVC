@@ -1,7 +1,11 @@
 import os
-import numpy as np
-import pandas as pd
+import uuid
 import pickle
+import mlflow
+import numpy as np
+import pandas as pd 
+from mlflow import sklearn 
+from urllib.parse import urlparse
 import logging
 
 from sklearn.svm import SVR
@@ -17,6 +21,9 @@ from modules.read_config import read_config
 from modules.logger_configurator import configure_logger
 from modules.save_metrics import save_metrics
 
+
+import warnings
+warnings.filterwarnings("ignore")
 
 def get_model(model_name, model_params):
     """Return an instance of the model based on the provided name and parameters."""
@@ -40,22 +47,49 @@ def split_data(dfx,dfy):
 
 def train_and_evaluate(X_train, X_test, y_train, y_test, model_name, model_params):
     """Train the model and evaluate its performance."""
-    model = get_model(model_name, model_params)
 
-     # Reshape y_train and y_test to 1D arrays
-    y_train = y_train.squeeze()
-    y_test = y_test.squeeze()
+    mlflow_config=config['mlflow_configuration']
+    remote_server_uri=config['mlflow_configuration']['remote_server_uri']
+    mlflow.set_tracking_uri(remote_server_uri)
 
-    model.fit(X_train, y_train)
-    y_pred = model.predict(X_test)
-    rmse = np.sqrt(mean_squared_error(y_test, y_pred))
-    mae = mean_absolute_error(y_test, y_pred)
-    r2 = r2_score(y_test, y_pred)
-    logging.info(f"{model_name} - RMSE: {rmse:.2f} - MAE: {mae:.2f} - R2 Score: {r2:.2f}")
+    # Dynamic Run names for mlflow
+    unique_id = str(uuid.uuid4())[:8]  # 8 characters of UUID
+    run_name = f"{model_name}_{unique_id}"
+    experiment_name = f"{mlflow_config['run_name']}_{model_name}"
+    mlflow.set_experiment(experiment_name)
 
-    save_metrics(model_name, model_params, rmse, mae, r2)
+    with mlflow.start_run(run_name=run_name) as mlops_run:  # mlflow*
+        model = get_model(model_name, model_params)
 
-    return model_name, model
+        # Reshape y_train and y_test to 1D arrays
+        y_train = y_train.squeeze()
+        y_test = y_test.squeeze()
+
+        model.fit(X_train, y_train)
+        y_pred = model.predict(X_test)
+        rmse = np.sqrt(mean_squared_error(y_test, y_pred))
+        mae = mean_absolute_error(y_test, y_pred)
+        r2 = r2_score(y_test, y_pred)
+        logging.info(f"{model_name} - RMSE: {rmse:.2f} - MAE: {mae:.2f} - R2 Score: {r2:.2f}")
+
+        # Log parameters and metrics to mlflow
+        mlflow.log_params(model_params) # mlflow*
+        mlflow.log_metric("RMSE", rmse) # mlflow*
+        mlflow.log_metric("MAE", mae) # mlflow*
+        mlflow.log_metric("R2 Score", r2) # mlflow*
+
+        # Save the model to mlflow
+        sklearn.log_model(model, "model") # mlflow*
+
+        tracking_url_type_store=urlparse(mlflow.get_artifact_uri()).scheme
+
+        if tracking_url_type_store != "file":
+            sklearn.log_model(model, "model")
+
+
+        save_metrics(model_name, model_params, rmse, mae, r2)
+
+        return model_name, model
 
 
 
@@ -76,7 +110,6 @@ def main():
     config = read_config('params.yaml')
     saved_model_directory = config['saved_model_dir']
 
-    # df, filename = read_data(config['data']['transformed'])
     dfx, filename = read_data(config['data']['transformed']['X'])
     dfy, filename = read_data(config['data']['transformed']['y'])
 

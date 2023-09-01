@@ -455,3 +455,81 @@ INFO: 2023-08-31 15:15:59,568: Successfully read winequality-red.csv, shape (159
 ERROR: 2023-08-31 15:15:59,578: Unable to write input schema. Error: 'columns'
 INFO: 2023-08-31 15:16:47,666: Successfully read winequality-red.csv, shape (1599, 12)
 INFO: 2023-08-31 15:16:47,675: Schema written to 'schema/input_schema.json'
+INFO: 2023-09-01 17:30:13,023: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-01 17:30:13,025: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-01 17:36:40,086: Updated parameters for SVR in params.yaml
+INFO: 2023-09-01 17:41:52,082: Updated parameters for GradientBoostingRegressor in params.yaml
+INFO: 2023-09-01 17:41:56,329: Updated parameters for Ridge in params.yaml
+INFO: 2023-09-01 17:42:01,090: Updated parameters for Lasso in params.yaml
+INFO: 2023-09-01 17:42:09,588: Updated parameters for DecisionTreeRegressor in params.yaml
+INFO: 2023-09-01 17:46:46,336: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-01 17:46:46,339: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-01 17:46:46,639: DecisionTreeRegressor - RMSE: 0.66 - MAE: 0.49 - R2 Score: 0.58
+INFO: 2023-09-01 17:46:49,466: 'DecisionTreeRegressor(max_depth=10, min_samples_leaf=16, min_samples_split=6)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-01 17:46:49,796: GradientBoostingRegressor - RMSE: 0.45 - MAE: 0.33 - R2 Score: 0.80
+INFO: 2023-09-01 17:46:51,805: 'GradientBoostingRegressor(learning_rate=0.20845104396213554, max_depth=5,
+                          min_samples_leaf=16, min_samples_split=3,
+                          n_estimators=96)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-01 17:46:51,836: Lasso - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 17:46:53,820: 'Lasso(alpha=1.0004130340355257e-05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-01 17:46:53,843: Ridge - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 17:46:55,817: 'Ridge(alpha=3.309465812428683e-05)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-01 17:46:56,839: SVR - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-09-01 17:46:58,878: 'SVR(C=0.9980363705043286, kernel='linear')' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-01 17:57:04,919: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-01 17:57:04,920: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-01 17:57:05,180: DecisionTreeRegressor - RMSE: 0.66 - MAE: 0.49 - R2 Score: 0.58
+INFO: 2023-09-01 17:57:07,816: 'DecisionTreeRegressor(max_depth=10, min_samples_leaf=16, min_samples_split=6)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-01 17:57:08,163: GradientBoostingRegressor - RMSE: 0.45 - MAE: 0.33 - R2 Score: 0.80
+INFO: 2023-09-01 17:57:10,134: 'GradientBoostingRegressor(learning_rate=0.20845104396213554, max_depth=5,
+                          min_samples_leaf=16, min_samples_split=3,
+                          n_estimators=96)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-01 17:57:10,171: Lasso - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 17:57:12,094: 'Lasso(alpha=1.0004130340355257e-05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-01 17:57:12,130: Ridge - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 17:57:14,012: 'Ridge(alpha=3.309465812428683e-05)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-01 17:57:15,031: SVR - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-09-01 17:57:16,931: 'SVR(C=0.9980363705043286, kernel='linear')' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-01 17:58:38,509: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-01 17:58:38,512: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-01 17:58:38,799: DecisionTreeRegressor - RMSE: 0.66 - MAE: 0.49 - R2 Score: 0.58
+INFO: 2023-09-01 17:58:41,464: 'DecisionTreeRegressor(max_depth=10, min_samples_leaf=16, min_samples_split=6)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-01 17:58:41,809: GradientBoostingRegressor - RMSE: 0.45 - MAE: 0.33 - R2 Score: 0.80
+INFO: 2023-09-01 17:58:43,797: 'GradientBoostingRegressor(learning_rate=0.20845104396213554, max_depth=5,
+                          min_samples_leaf=16, min_samples_split=3,
+                          n_estimators=96)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-01 17:58:43,835: Lasso - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 17:58:45,790: 'Lasso(alpha=1.0004130340355257e-05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-01 17:58:45,830: Ridge - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 17:58:47,751: 'Ridge(alpha=3.309465812428683e-05)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-01 17:58:48,776: SVR - RMSE: 0.82 - MAE: 0.64 - R2 Score: 0.34
+INFO: 2023-09-01 17:58:50,714: 'SVR(C=0.9980363705043286, kernel='linear')' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-01 18:00:52,617: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-01 18:00:52,619: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-01 18:00:52,883: DecisionTreeRegressor - RMSE: 0.64 - MAE: 0.48 - R2 Score: 0.59
+INFO: 2023-09-01 18:00:55,578: 'DecisionTreeRegressor(max_depth=8, min_samples_leaf=14, min_samples_split=5)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-01 18:00:55,938: GradientBoostingRegressor - RMSE: 0.46 - MAE: 0.34 - R2 Score: 0.79
+INFO: 2023-09-01 18:00:57,923: 'GradientBoostingRegressor(learning_rate=0.105, max_depth=6, min_samples_leaf=14,
+                          min_samples_split=4, n_estimators=85)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-01 18:00:57,949: Lasso - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 18:00:59,854: 'Lasso(alpha=1.5e-05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-01 18:00:59,877: Ridge - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 18:01:01,789: 'Ridge(alpha=2.5e-05)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-01 18:01:01,864: SVR - RMSE: 0.92 - MAE: 0.70 - R2 Score: 0.16
+INFO: 2023-09-01 18:01:03,797: 'SVR(C=0.85)' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-01 18:03:14,918: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-01 18:03:14,919: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-01 18:03:15,155: DecisionTreeRegressor - RMSE: 0.64 - MAE: 0.48 - R2 Score: 0.59
+INFO: 2023-09-01 18:03:17,773: 'DecisionTreeRegressor(max_depth=8, min_samples_leaf=14, min_samples_split=5)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-01 18:03:18,130: GradientBoostingRegressor - RMSE: 0.46 - MAE: 0.34 - R2 Score: 0.79
+INFO: 2023-09-01 18:03:20,082: 'GradientBoostingRegressor(learning_rate=0.105, max_depth=6, min_samples_leaf=14,
+                          min_samples_split=4, n_estimators=85)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-01 18:03:20,106: Lasso - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 18:03:22,019: 'Lasso(alpha=1.5e-05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-01 18:03:22,042: Ridge - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 18:03:23,959: 'Ridge(alpha=2.5e-05)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-01 18:03:24,033: SVR - RMSE: 0.92 - MAE: 0.70 - R2 Score: 0.16
+INFO: 2023-09-01 18:03:25,986: 'SVR(C=0.85)' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-01 18:03:26,507: Copied 'GradientBoostingRegressor' model to 'prediction_app/prediction_resources/serving_models\model.pkl'
+INFO: 2023-09-01 18:03:26,508: Scaler: 'X_scaler.pkl' copied from 'model_artifacts/scaler\X_scaler.pkl' to 'prediction_app/prediction_resources/scaler\X_scaler.pkl'.
+INFO: 2023-09-01 18:03:26,509: Scaler: 'y_scaler.pkl' copied from 'model_artifacts/scaler\y_scaler.pkl' to 'prediction_app/prediction_resources/scaler\y_scaler.pkl'.
