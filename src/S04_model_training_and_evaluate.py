@@ -48,17 +48,18 @@ def split_data(dfx,dfy):
 def train_and_evaluate(X_train, X_test, y_train, y_test, model_name, model_params):
     """Train the model and evaluate its performance."""
 
-    mlflow_config=config['mlflow_configuration']
+   
     remote_server_uri=config['mlflow_configuration']['remote_server_uri']
     mlflow.set_tracking_uri(remote_server_uri)
 
     # Dynamic Run names for mlflow
-    unique_id = str(uuid.uuid4())[:8]  # 8 characters of UUID
-    run_name = f"{model_name}_{unique_id}"
-    experiment_name = f"{mlflow_config['run_name']}_{model_name}"
+    # unique_id = str(uuid.uuid4())[:4]  # 'n' characters of UUID
+    # run_name = f"{model_name}_{unique_id}"
+    run_name = model_name
+    experiment_name = config['mlflow_configuration']['experiment_name']
     mlflow.set_experiment(experiment_name)
 
-    with mlflow.start_run(run_name=run_name) as mlops_run:  # mlflow*
+    with mlflow.start_run(run_name=run_name):  # mlflow*
         model = get_model(model_name, model_params)
 
         # Reshape y_train and y_test to 1D arrays
@@ -80,6 +81,10 @@ def train_and_evaluate(X_train, X_test, y_train, y_test, model_name, model_param
 
         # Save the model to mlflow
         sklearn.log_model(model, "model") # mlflow*
+        model_uri = f"runs:/{mlflow.active_run().info.run_uuid}/model"
+        mlflow.register_model(model_uri, model_name)
+
+        print(f"Model saved in run {mlflow.active_run().info.run_uuid}")
 
         tracking_url_type_store=urlparse(mlflow.get_artifact_uri()).scheme
 

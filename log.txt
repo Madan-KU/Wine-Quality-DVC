@@ -1,0 +1,12 @@
+MLflow Tracking URI set to: http://127.0.0.1:1234
+All fetched runs:                              run_id  ...             tags.mlflow.source.git.commit
+0  1239a46b3af64e3eb6e069159f4c0de5  ...  40c6e06c784402b4ef79729e8f9e62d4cf03d1de
+1  1b3a0bf32fdb4bd598e680b94796c401  ...  40c6e06c784402b4ef79729e8f9e62d4cf03d1de
+2  99cec8d849554f48aa7f87eef50a015b  ...  40c6e06c784402b4ef79729e8f9e62d4cf03d1de
+3  46c65b5da43742719e7e1a3b31726de1  ...  40c6e06c784402b4ef79729e8f9e62d4cf03d1de
+4  8c3c3fa9ff94495c9adde90342a61273  ...  40c6e06c784402b4ef79729e8f9e62d4cf03d1de
+
+[5 rows x 23 columns]
+Best run ID based on lowest MAE: 46c65b5da43742719e7e1a3b31726de1
+Found 0 model versions for model name 'GradientBoostingRegressor'
+No model was set to production.

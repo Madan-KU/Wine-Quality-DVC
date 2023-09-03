@@ -17,37 +17,38 @@ logging:
   log_file: logs/data.log
 mlflow_configuration:
   artifacts_dir: artifacts
-  experiment_name: new_regression
-  registered_model_name: GradientBoostingWineModel
+  experiment_name: experiment
+  registered_model_name: GradientBoostingRegressor
   remote_server_uri: http://127.0.0.1:1234
+  production_model: prediction_app/prediction_resources/serving_models/mlflow_model.pkl
   run_name: Regression
 model:
   DecisionTreeRegressor:
     class: models.decision_tree_regression_model.train_decision_tree_regression_model
     name: DecisionTreeRegressor
     params:
-      max_depth: 8
-      min_samples_leaf: 14
-      min_samples_split: 5
+      max_depth: 2
+      min_samples_leaf: 7
+      min_samples_split: 2
   GradientBoostingRegressor:
     class: models.gradient_boosting_regression_model.train_gradient_boosting_regression_model
     name: GradientBoostingRegression
     params:
-      learning_rate: 0.105
+      learning_rate: 1
       max_depth: 6
-      min_samples_leaf: 14
-      min_samples_split: 4
-      n_estimators: 85
+      min_samples_leaf: 16
+      min_samples_split: 7
+      n_estimators: 50
   Lasso:
     class: models.lasso_regression_model.train_lasso_regression_model
     name: LassoRegression
     params:
-      alpha: 1.5e-05
+      alpha: 0.05
   Ridge:
     class: models.ridge_regression_model.train_ridge_regression_model
     name: RidgeRegression
     params:
-      alpha: 2.5e-05
+      alpha: 2.5e-03
   SVR:
     class: models.support_vector_regression_model.train_support_vector_regression_model
     name: SupportVectorRegression

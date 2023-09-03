@@ -533,3 +533,180 @@ INFO: 2023-09-01 18:03:25,986: 'SVR(C=0.85)' saved to 'model_artifacts/saved_mod
 INFO: 2023-09-01 18:03:26,507: Copied 'GradientBoostingRegressor' model to 'prediction_app/prediction_resources/serving_models\model.pkl'
 INFO: 2023-09-01 18:03:26,508: Scaler: 'X_scaler.pkl' copied from 'model_artifacts/scaler\X_scaler.pkl' to 'prediction_app/prediction_resources/scaler\X_scaler.pkl'.
 INFO: 2023-09-01 18:03:26,509: Scaler: 'y_scaler.pkl' copied from 'model_artifacts/scaler\y_scaler.pkl' to 'prediction_app/prediction_resources/scaler\y_scaler.pkl'.
+INFO: 2023-09-01 23:05:07,912: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-01 23:05:07,916: Successfully read winequality-red.csv, shape (1599, 1)
+WARNING: 2023-09-01 23:05:09,987: Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001663D45F510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/experiments/get-by-name?experiment_name=Regression_DecisionTreeRegressor
+INFO: 2023-09-01 23:10:04,824: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-01 23:10:04,826: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-01 23:12:14,461: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-01 23:12:14,462: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-01 23:13:07,395: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-01 23:13:07,397: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-01 23:13:07,649: DecisionTreeRegressor - RMSE: 0.64 - MAE: 0.48 - R2 Score: 0.59
+INFO: 2023-09-01 23:13:10,718: 'DecisionTreeRegressor(max_depth=8, min_samples_leaf=14, min_samples_split=5)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-01 23:13:11,081: GradientBoostingRegressor - RMSE: 0.46 - MAE: 0.34 - R2 Score: 0.79
+INFO: 2023-09-01 23:13:13,105: 'GradientBoostingRegressor(learning_rate=0.105, max_depth=6, min_samples_leaf=14,
+                          min_samples_split=4, n_estimators=85)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-01 23:13:13,130: Lasso - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 23:13:15,083: 'Lasso(alpha=1.5e-05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-01 23:13:15,111: Ridge - RMSE: 0.58 - MAE: 0.45 - R2 Score: 0.67
+INFO: 2023-09-01 23:13:16,958: 'Ridge(alpha=2.5e-05)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-01 23:13:17,035: SVR - RMSE: 0.92 - MAE: 0.70 - R2 Score: 0.16
+INFO: 2023-09-01 23:13:18,904: 'SVR(C=0.85)' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-01 23:13:19,421: Copied 'GradientBoostingRegressor' model to 'prediction_app/prediction_resources/serving_models\model.pkl'
+INFO: 2023-09-01 23:13:19,428: Scaler: 'X_scaler.pkl' copied from 'model_artifacts/scaler\X_scaler.pkl' to 'prediction_app/prediction_resources/scaler\X_scaler.pkl'.
+INFO: 2023-09-01 23:13:19,429: Scaler: 'y_scaler.pkl' copied from 'model_artifacts/scaler\y_scaler.pkl' to 'prediction_app/prediction_resources/scaler\y_scaler.pkl'.
+INFO: 2023-09-01 23:15:12,072: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-01 23:15:12,074: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-01 23:15:12,316: DecisionTreeRegressor - RMSE: 0.79 - MAE: 0.62 - R2 Score: 0.38
+INFO: 2023-09-01 23:15:14,946: 'DecisionTreeRegressor(max_depth=2, min_samples_leaf=7)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-01 23:15:15,162: GradientBoostingRegressor - RMSE: 0.63 - MAE: 0.43 - R2 Score: 0.61
+INFO: 2023-09-01 23:15:17,169: 'GradientBoostingRegressor(learning_rate=1, max_depth=6, min_samples_leaf=16,
+                          min_samples_split=7, n_estimators=50)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-01 23:15:17,193: Lasso - RMSE: 0.87 - MAE: 0.71 - R2 Score: 0.25
+INFO: 2023-09-01 23:15:19,115: 'Lasso(alpha=0.05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-01 23:15:19,138: Ridge - RMSE: 0.68 - MAE: 0.54 - R2 Score: 0.55
+INFO: 2023-09-01 23:15:21,060: 'Ridge(alpha=0.0025)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-01 23:15:21,129: SVR - RMSE: 0.92 - MAE: 0.70 - R2 Score: 0.16
+INFO: 2023-09-01 23:15:23,069: 'SVR(C=0.85)' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-01 23:15:23,595: Copied 'GradientBoostingRegressor' model to 'prediction_app/prediction_resources/serving_models\model.pkl'
+INFO: 2023-09-01 23:15:23,596: Scaler: 'X_scaler.pkl' copied from 'model_artifacts/scaler\X_scaler.pkl' to 'prediction_app/prediction_resources/scaler\X_scaler.pkl'.
+INFO: 2023-09-01 23:15:23,597: Scaler: 'y_scaler.pkl' copied from 'model_artifacts/scaler\y_scaler.pkl' to 'prediction_app/prediction_resources/scaler\y_scaler.pkl'.
+INFO: 2023-09-03 15:18:19,963: Starting to log production model...
+INFO: 2023-09-03 15:18:20,055: Successfully logged production model.
+INFO: 2023-09-03 21:27:35,226: Starting to log production model...
+INFO: 2023-09-03 21:27:47,473: Starting to log production model...
+WARNING: 2023-09-03 21:27:49,554: Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025EDFD8C5D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/search
+WARNING: 2023-09-03 21:27:55,612: Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025EDFE66A10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/search
+WARNING: 2023-09-03 21:28:05,670: Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025EE0505BD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/search
+WARNING: 2023-09-03 21:28:23,716: Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025EDFE401D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/search
+WARNING: 2023-09-03 21:28:57,764: Retrying (Retry(total=0, connect=0, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025EE052B850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /api/2.0/mlflow/runs/search
+ERROR: 2023-09-03 21:28:59,807: Error fetching best run: API request to http://127.0.0.1:1234/api/2.0/mlflow/runs/search failed with exception HTTPConnectionPool(host='127.0.0.1', port=1234): Max retries exceeded with url: /api/2.0/mlflow/runs/search (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025EE0529750>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+ERROR: 2023-09-03 21:28:59,808: Error logging production model: API request to http://127.0.0.1:1234/api/2.0/mlflow/runs/search failed with exception HTTPConnectionPool(host='127.0.0.1', port=1234): Max retries exceeded with url: /api/2.0/mlflow/runs/search (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000025EE0529750>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+INFO: 2023-09-03 21:31:25,279: Starting to log production model...
+INFO: 2023-09-03 21:31:25,365: Successfully logged production model.
+INFO: 2023-09-03 21:32:57,312: Starting to log production model...
+INFO: 2023-09-03 21:32:57,397: Successfully logged production model.
+INFO: 2023-09-03 21:34:24,626: Starting to log production model...
+INFO: 2023-09-03 21:34:24,726: Successfully logged production model.
+INFO: 2023-09-03 21:34:44,928: Starting to log production model...
+INFO: 2023-09-03 21:34:45,014: Successfully logged production model.
+INFO: 2023-09-03 21:40:00,571: Starting to log production model...
+INFO: 2023-09-03 21:40:00,665: Successfully logged production model.
+INFO: 2023-09-03 21:41:30,113: Starting to log production model...
+INFO: 2023-09-03 21:41:30,231: Successfully logged production model.
+INFO: 2023-09-03 21:42:20,468: Starting to log production model...
+INFO: 2023-09-03 21:42:20,565: Successfully logged production model.
+INFO: 2023-09-03 21:45:05,049: Starting to log production model...
+INFO: 2023-09-03 21:45:05,136: Successfully logged production model.
+INFO: 2023-09-03 21:45:18,661: Starting to log production model...
+INFO: 2023-09-03 21:45:18,746: Successfully logged production model.
+INFO: 2023-09-03 21:46:44,187: Starting to log production model...
+INFO: 2023-09-03 21:46:44,269: Successfully logged production model.
+INFO: 2023-09-03 21:48:39,635: Starting to log production model...
+INFO: 2023-09-03 21:48:39,722: Successfully logged production model.
+INFO: 2023-09-03 21:49:13,724: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-03 21:49:13,727: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-03 21:49:13,960: DecisionTreeRegressor - RMSE: 0.79 - MAE: 0.62 - R2 Score: 0.38
+INFO: 2023-09-03 21:49:16,787: 'DecisionTreeRegressor(max_depth=2, min_samples_leaf=7)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-03 21:49:17,002: GradientBoostingRegressor - RMSE: 0.63 - MAE: 0.43 - R2 Score: 0.61
+INFO: 2023-09-03 21:49:18,912: 'GradientBoostingRegressor(learning_rate=1, max_depth=6, min_samples_leaf=16,
+                          min_samples_split=7, n_estimators=50)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-03 21:49:18,936: Lasso - RMSE: 0.87 - MAE: 0.71 - R2 Score: 0.25
+INFO: 2023-09-03 21:49:20,799: 'Lasso(alpha=0.05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-03 21:49:20,822: Ridge - RMSE: 0.68 - MAE: 0.54 - R2 Score: 0.55
+INFO: 2023-09-03 21:49:22,661: 'Ridge(alpha=0.0025)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-03 21:49:22,730: SVR - RMSE: 0.92 - MAE: 0.70 - R2 Score: 0.16
+INFO: 2023-09-03 21:49:24,586: 'SVR(C=0.85)' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-03 21:52:25,694: Starting to log production model...
+INFO: 2023-09-03 21:52:25,786: Successfully logged production model.
+INFO: 2023-09-03 21:56:35,146: Starting to log production model...
+INFO: 2023-09-03 21:56:35,252: Successfully logged production model.
+INFO: 2023-09-03 21:57:11,913: Starting to log production model...
+INFO: 2023-09-03 21:57:12,004: Successfully logged production model.
+INFO: 2023-09-03 21:57:41,107: Starting to log production model...
+INFO: 2023-09-03 21:57:41,189: Successfully logged production model.
+INFO: 2023-09-03 21:58:08,234: Starting to log production model...
+INFO: 2023-09-03 21:58:08,312: Successfully logged production model.
+INFO: 2023-09-03 21:58:42,255: Starting to log production model...
+INFO: 2023-09-03 21:58:42,432: Successfully logged production model.
+INFO: 2023-09-03 21:58:56,616: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-03 21:58:56,618: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-03 21:58:56,837: DecisionTreeRegressor - RMSE: 0.79 - MAE: 0.62 - R2 Score: 0.38
+INFO: 2023-09-03 21:58:59,423: 'DecisionTreeRegressor(max_depth=2, min_samples_leaf=7)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-03 21:58:59,642: GradientBoostingRegressor - RMSE: 0.63 - MAE: 0.43 - R2 Score: 0.61
+INFO: 2023-09-03 21:59:01,554: 'GradientBoostingRegressor(learning_rate=1, max_depth=6, min_samples_leaf=16,
+                          min_samples_split=7, n_estimators=50)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-03 21:59:01,578: Lasso - RMSE: 0.87 - MAE: 0.71 - R2 Score: 0.25
+INFO: 2023-09-03 21:59:03,464: 'Lasso(alpha=0.05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-03 21:59:03,487: Ridge - RMSE: 0.68 - MAE: 0.54 - R2 Score: 0.55
+INFO: 2023-09-03 21:59:05,317: 'Ridge(alpha=0.0025)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-03 21:59:05,386: SVR - RMSE: 0.92 - MAE: 0.70 - R2 Score: 0.16
+INFO: 2023-09-03 21:59:07,235: 'SVR(C=0.85)' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-03 21:59:19,444: Starting to log production model...
+INFO: 2023-09-03 21:59:19,524: Successfully logged production model.
+INFO: 2023-09-03 22:00:03,133: Starting to log production model...
+INFO: 2023-09-03 22:00:03,217: Successfully logged production model.
+INFO: 2023-09-03 22:01:18,953: Starting to log production model...
+INFO: 2023-09-03 22:01:19,034: Successfully logged production model.
+INFO: 2023-09-03 22:10:48,388: Starting to log production model...
+INFO: 2023-09-03 22:10:48,471: Successfully logged production model.
+INFO: 2023-09-03 22:20:50,103: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-03 22:20:50,105: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-03 22:20:50,366: DecisionTreeRegressor - RMSE: 0.79 - MAE: 0.62 - R2 Score: 0.38
+INFO: 2023-09-03 22:20:52,934: 'DecisionTreeRegressor(max_depth=2, min_samples_leaf=7)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-03 22:20:53,150: GradientBoostingRegressor - RMSE: 0.63 - MAE: 0.43 - R2 Score: 0.61
+INFO: 2023-09-03 22:20:55,047: 'GradientBoostingRegressor(learning_rate=1, max_depth=6, min_samples_leaf=16,
+                          min_samples_split=7, n_estimators=50)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-03 22:20:55,071: Lasso - RMSE: 0.87 - MAE: 0.71 - R2 Score: 0.25
+INFO: 2023-09-03 22:20:56,933: 'Lasso(alpha=0.05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-03 22:20:56,954: Ridge - RMSE: 0.68 - MAE: 0.54 - R2 Score: 0.55
+INFO: 2023-09-03 22:20:58,789: 'Ridge(alpha=0.0025)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-03 22:20:58,860: SVR - RMSE: 0.92 - MAE: 0.70 - R2 Score: 0.16
+INFO: 2023-09-03 22:21:00,737: 'SVR(C=0.85)' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-03 22:21:07,791: Starting to log production model...
+INFO: 2023-09-03 22:21:07,909: Successfully logged production model.
+INFO: 2023-09-03 22:56:56,093: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-03 22:56:56,096: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-03 22:56:56,320: DecisionTreeRegressor - RMSE: 0.79 - MAE: 0.62 - R2 Score: 0.38
+INFO: 2023-09-03 22:56:58,908: 'DecisionTreeRegressor(max_depth=2, min_samples_leaf=7)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-03 22:56:59,121: GradientBoostingRegressor - RMSE: 0.63 - MAE: 0.43 - R2 Score: 0.61
+INFO: 2023-09-03 22:57:01,047: 'GradientBoostingRegressor(learning_rate=1, max_depth=6, min_samples_leaf=16,
+                          min_samples_split=7, n_estimators=50)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-03 22:57:01,071: Lasso - RMSE: 0.87 - MAE: 0.71 - R2 Score: 0.25
+INFO: 2023-09-03 22:57:02,950: 'Lasso(alpha=0.05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-03 22:57:02,975: Ridge - RMSE: 0.68 - MAE: 0.54 - R2 Score: 0.55
+INFO: 2023-09-03 22:57:04,870: 'Ridge(alpha=0.0025)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-03 22:57:04,942: SVR - RMSE: 0.92 - MAE: 0.70 - R2 Score: 0.16
+INFO: 2023-09-03 22:57:06,877: 'SVR(C=0.85)' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-03 22:58:49,469: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-03 22:58:49,470: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-03 22:59:14,264: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-03 22:59:14,266: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-03 22:59:14,506: DecisionTreeRegressor - RMSE: 0.79 - MAE: 0.62 - R2 Score: 0.38
+INFO: 2023-09-03 22:59:17,107: 'DecisionTreeRegressor(max_depth=2, min_samples_leaf=7)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-03 22:59:17,326: GradientBoostingRegressor - RMSE: 0.63 - MAE: 0.43 - R2 Score: 0.61
+INFO: 2023-09-03 22:59:19,275: 'GradientBoostingRegressor(learning_rate=1, max_depth=6, min_samples_leaf=16,
+                          min_samples_split=7, n_estimators=50)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-03 22:59:19,299: Lasso - RMSE: 0.87 - MAE: 0.71 - R2 Score: 0.25
+INFO: 2023-09-03 22:59:21,180: 'Lasso(alpha=0.05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-03 22:59:21,205: Ridge - RMSE: 0.68 - MAE: 0.54 - R2 Score: 0.55
+INFO: 2023-09-03 22:59:23,114: 'Ridge(alpha=0.0025)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-03 22:59:23,185: SVR - RMSE: 0.92 - MAE: 0.70 - R2 Score: 0.16
+INFO: 2023-09-03 22:59:25,039: 'SVR(C=0.85)' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-03 23:04:47,998: Successfully read winequality-red.csv, shape (1599, 11)
+INFO: 2023-09-03 23:04:48,000: Successfully read winequality-red.csv, shape (1599, 1)
+INFO: 2023-09-03 23:04:48,251: DecisionTreeRegressor - RMSE: 0.79 - MAE: 0.62 - R2 Score: 0.38
+INFO: 2023-09-03 23:04:50,875: 'DecisionTreeRegressor(max_depth=2, min_samples_leaf=7)' saved to 'model_artifacts/saved_models\DecisionTreeRegressor.pkl'
+INFO: 2023-09-03 23:04:51,093: GradientBoostingRegressor - RMSE: 0.63 - MAE: 0.43 - R2 Score: 0.61
+INFO: 2023-09-03 23:04:53,039: 'GradientBoostingRegressor(learning_rate=1, max_depth=6, min_samples_leaf=16,
+                          min_samples_split=7, n_estimators=50)' saved to 'model_artifacts/saved_models\GradientBoostingRegressor.pkl'
+INFO: 2023-09-03 23:04:53,064: Lasso - RMSE: 0.87 - MAE: 0.71 - R2 Score: 0.25
+INFO: 2023-09-03 23:04:54,952: 'Lasso(alpha=0.05)' saved to 'model_artifacts/saved_models\Lasso.pkl'
+INFO: 2023-09-03 23:04:54,975: Ridge - RMSE: 0.68 - MAE: 0.54 - R2 Score: 0.55
+INFO: 2023-09-03 23:04:56,885: 'Ridge(alpha=0.0025)' saved to 'model_artifacts/saved_models\Ridge.pkl'
+INFO: 2023-09-03 23:04:56,957: SVR - RMSE: 0.92 - MAE: 0.70 - R2 Score: 0.16
+INFO: 2023-09-03 23:04:58,876: 'SVR(C=0.85)' saved to 'model_artifacts/saved_models\SVR.pkl'
+INFO: 2023-09-03 23:06:26,873: Starting to log production model...
+ERROR: 2023-09-03 23:06:26,911: Error fetching best run: 'metrics.MAE'
+ERROR: 2023-09-03 23:06:26,911: Error logging production model: 'metrics.MAE'

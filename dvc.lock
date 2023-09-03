@@ -89,34 +89,34 @@ stages:
       size: 513
     - path: params.yaml
       hash: md5
-      md5: 88aaee5bf61b97ac9165931636892553
-      size: 2169
+      md5: 13442c655ea332ecd8b9ea44d4eb4ebb
+      size: 2257
     - path: src\S04_model_training_and_evaluate.py
       hash: md5
-      md5: 0b0b31b107be9a65d3c888c356cf9545
-      size: 4176
+      md5: 3485e5af38b830b8f7a32b8344ac2732
+      size: 4139
     params:
       params.yaml:
-        model.GradientBoostingRegressor.params.learning_rate: 0.105
-        model.GradientBoostingRegressor.params.n_estimators: 85
-        model.Lasso.params.alpha: 1.5e-05
-        model.Ridge.params.alpha: 2.5e-05
+        model.GradientBoostingRegressor.params.learning_rate: 1
+        model.GradientBoostingRegressor.params.n_estimators: 50
+        model.Lasso.params.alpha: 0.05
+        model.Ridge.params.alpha: 0.0025
         model.SVR.params.C: 0.85
         model.SVR.params.kernel: rbf
     outs:
     - path: model_artifacts\saved_models
       hash: md5
-      md5: 762369ae74b6113d341b785fd6181f30.dir
-      size: 402923
+      md5: b945b2808fe393d55050bce8c4d830e5.dir
+      size: 265984
       nfiles: 5
     - path: report\metrics.json
       hash: md5
-      md5: 225c7e602d4299b636420a62db91df32
-      size: 915
+      md5: c2c7186806134fc79d3139c162855047
+      size: 914
     - path: report\params.json
       hash: md5
-      md5: 413290f1621346c96207644309d403f7
-      size: 749
+      md5: 810c2751447e2054439e60f6d5e37ce0
+      size: 740
   model_to_prediction_service:
     cmd: python  src\S05_model_to_prediction_service.py
     deps:
@@ -130,8 +130,8 @@ stages:
       size: 182
     - path: params.yaml
       hash: md5
-      md5: 88aaee5bf61b97ac9165931636892553
-      size: 2169
+      md5: 13442c655ea332ecd8b9ea44d4eb4ebb
+      size: 2257
     - path: src\S05_model_to_prediction_service.py
       hash: md5
       md5: bbede33f0a56d769bc2e9f0f54a007fb
@@ -144,6 +144,6 @@ stages:
       nfiles: 2
     - path: prediction_app\prediction_resources\serving_models\
       hash: md5
-      md5: d02d79064c6a6f4db34edf6a19c680c0.dir
-      size: 289379
+      md5: 22c43082ca2a9eae50c92624afcf0223.dir
+      size: 159643
       nfiles: 1
