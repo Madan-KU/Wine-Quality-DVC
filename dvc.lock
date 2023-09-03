@@ -89,34 +89,34 @@ stages:
       size: 513
     - path: params.yaml
       hash: md5
-      md5: 13442c655ea332ecd8b9ea44d4eb4ebb
-      size: 2257
+      md5: 69b1c8de5600d8e86ac4df65b12b5f12
+      size: 2297
     - path: src\S04_model_training_and_evaluate.py
       hash: md5
-      md5: 3485e5af38b830b8f7a32b8344ac2732
-      size: 4139
+      md5: 244a248b43a2df41ccd0a5b47778e81e
+      size: 4280
     params:
       params.yaml:
-        model.GradientBoostingRegressor.params.learning_rate: 1
-        model.GradientBoostingRegressor.params.n_estimators: 50
-        model.Lasso.params.alpha: 0.05
-        model.Ridge.params.alpha: 0.0025
-        model.SVR.params.C: 0.85
-        model.SVR.params.kernel: rbf
+        model.GradientBoostingRegressor.params.learning_rate: 0.09441984528708666
+        model.GradientBoostingRegressor.params.n_estimators: 185
+        model.Lasso.params.alpha: 1.001098452866197e-05
+        model.Ridge.params.alpha: 3.306264699556261e-05
+        model.SVR.params.C: 0.999599271154472
+        model.SVR.params.kernel: linear
     outs:
     - path: model_artifacts\saved_models
       hash: md5
-      md5: b945b2808fe393d55050bce8c4d830e5.dir
-      size: 265984
+      md5: 5e351c5580a73da5322276243dc63374.dir
+      size: 453320
       nfiles: 5
     - path: report\metrics.json
       hash: md5
-      md5: c2c7186806134fc79d3139c162855047
-      size: 914
+      md5: 6801727855c9e6d8735c38cafc8cad56
+      size: 920
     - path: report\params.json
       hash: md5
-      md5: 810c2751447e2054439e60f6d5e37ce0
-      size: 740
+      md5: a60101c27b02e454324460adab4677e9
+      size: 809
   model_to_prediction_service:
     cmd: python  src\S05_model_to_prediction_service.py
     deps:
@@ -130,8 +130,8 @@ stages:
       size: 182
     - path: params.yaml
       hash: md5
-      md5: 13442c655ea332ecd8b9ea44d4eb4ebb
-      size: 2257
+      md5: 69b1c8de5600d8e86ac4df65b12b5f12
+      size: 2297
     - path: src\S05_model_to_prediction_service.py
       hash: md5
       md5: bbede33f0a56d769bc2e9f0f54a007fb
@@ -144,6 +144,13 @@ stages:
       nfiles: 2
     - path: prediction_app\prediction_resources\serving_models\
       hash: md5
-      md5: 22c43082ca2a9eae50c92624afcf0223.dir
-      size: 159643
+      md5: 0d728bf3de5f28702bacf1659f26a29e.dir
+      size: 340127
       nfiles: 1
+  logging_production_model:
+    cmd: python src/S06_logging_production_model.py --config=params.yaml
+    deps:
+    - path: src/S06_logging_production_model.py
+      hash: md5
+      md5: 5655cdb21e77a85cb4aa3b516df31ad9
+      size: 3617

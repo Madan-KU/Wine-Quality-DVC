@@ -18,43 +18,43 @@ logging:
 mlflow_configuration:
   artifacts_dir: artifacts
   experiment_name: experiment
+  production_model: prediction_app/prediction_resources/serving_models
   registered_model_name: GradientBoostingRegressor
   remote_server_uri: http://127.0.0.1:1234
-  production_model: prediction_app/prediction_resources/serving_models/mlflow_model.pkl
   run_name: Regression
 model:
   DecisionTreeRegressor:
     class: models.decision_tree_regression_model.train_decision_tree_regression_model
     name: DecisionTreeRegressor
     params:
-      max_depth: 2
-      min_samples_leaf: 7
-      min_samples_split: 2
+      max_depth: 10
+      min_samples_leaf: 16
+      min_samples_split: 8
   GradientBoostingRegressor:
     class: models.gradient_boosting_regression_model.train_gradient_boosting_regression_model
     name: GradientBoostingRegression
     params:
-      learning_rate: 1
-      max_depth: 6
-      min_samples_leaf: 16
-      min_samples_split: 7
-      n_estimators: 50
+      learning_rate: 0.09441984528708666
+      max_depth: 4
+      min_samples_leaf: 10
+      min_samples_split: 3
+      n_estimators: 185
   Lasso:
     class: models.lasso_regression_model.train_lasso_regression_model
     name: LassoRegression
     params:
-      alpha: 0.05
+      alpha: 1.001098452866198e-05
   Ridge:
     class: models.ridge_regression_model.train_ridge_regression_model
     name: RidgeRegression
     params:
-      alpha: 2.5e-03
+      alpha: 3.306264699556261e-05
   SVR:
     class: models.support_vector_regression_model.train_support_vector_regression_model
     name: SupportVectorRegression
     params:
-      C: 0.85
-      kernel: rbf
+      C: 0.999599271154472
+      kernel: linear
 prediction_app:
   model: prediction_app/prediction_resources/serving_models
   root_dir: prediction_app

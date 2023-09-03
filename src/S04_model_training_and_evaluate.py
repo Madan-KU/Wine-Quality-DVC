@@ -84,8 +84,6 @@ def train_and_evaluate(X_train, X_test, y_train, y_test, model_name, model_param
         model_uri = f"runs:/{mlflow.active_run().info.run_uuid}/model"
         mlflow.register_model(model_uri, model_name)
 
-        print(f"Model saved in run {mlflow.active_run().info.run_uuid}")
-
         tracking_url_type_store=urlparse(mlflow.get_artifact_uri()).scheme
 
         if tracking_url_type_store != "file":

@@ -19,17 +19,14 @@ class ModelLogger:
         self.remote_server_uri = self.mlflow_config["remote_server_uri"]
 
         mlflow.set_tracking_uri(self.remote_server_uri)
-        print(f"MLflow Tracking URI set to: {self.remote_server_uri}")
         self.client = MlflowClient()
 
     def _get_lowest_mae_run_id(self):
-        runs = mlflow.search_runs(experiment_ids=[13])
-        print(f"All fetched runs: {runs}")
-        
+        runs = mlflow.search_runs(experiment_ids=[13])       
         runs["metrics.MAE"] = pd.to_numeric(runs["metrics.MAE"], errors='coerce')
 
-        lowest = runs["metrics.MAE"].min()  # directly use the min() function
-        best_run_id = runs[runs["metrics.MAE"] == lowest]["run_id"].iloc[0]  # use iloc[0] to get the first matching run ID
+        lowest = runs["metrics.MAE"].min() 
+        best_run_id = runs[runs["metrics.MAE"] == lowest]["run_id"].iloc[0]
         print(f"Best run ID based on lowest MAE: {best_run_id}")
         return best_run_id
 
@@ -69,7 +66,15 @@ class ModelLogger:
 
         if logged_model:
             loaded_model = mlflow.pyfunc.load_model(logged_model)
-            model_path = os.path.join(self.config["production_model"], "model.pkl")
+            model_path = os.path.join(self.config["mlflow_configuration"]["production_model"], "mlflow_model.pkl")
+            production_model_dir = self.config["mlflow_configuration"]["production_model"]
+
+            # Check if the directory exists, if not, create.
+            if not os.path.exists(production_model_dir):
+                os.makedirs(production_model_dir)
+
+            model_path = os.path.join(production_model_dir, "model.pkl")
+
             with open(model_path, 'wb') as file:
                 pickle.dump(loaded_model, file)
             print(f"Model saved to: {model_path}")
